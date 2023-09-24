@@ -1,0 +1,212 @@
+@font-face {
+  font-family: nunito;
+  src: url('./Fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Variables Declearations */
+:root {
+  /* light Modes Varibles*/
+  --bg-color: #e9e4f0;
+  --text-heading: #6c30d4;
+  --text-normal: #dfdbe5;
+
+  /* Dark Modes Varibles*/
+  --dark-bg-color: rgb(42, 42, 48, 1);
+  /* --text-heading:#ecc9ub; */
+  --text-normal: #dfdbe5;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: nunito;
+  background-color: var(--bg-color);
+  color: var(--text-heading);
+  letter-spacing: 0.5px;
+  overflow-x: hidden;
+
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-heading)
+}
+
+/* NavBar CSS */
+header {
+  width: 100%;
+
+  & nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 900;
+    height: 50px;
+    padding: 15px 100px;
+
+
+    & ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      font-size: 20px;
+      background-color: var(--bg-color);
+
+    }
+
+    .second-div {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      & button {
+        border: none;
+        border-radius: 5px;
+        background-color: var(--text-heading);
+        color: white;
+        padding: 8px 11px;
+        font-weight: 400;
+        transition: all ease-in-out 0.6;
+        font-weight: 600;
+        letter-spacing: 1px;
+
+        & i {
+          margin-left: 5px;
+        }
+      }
+
+      & .icon {
+        font-size: 30px;
+      }
+
+      .hamburgur {
+        display: none;
+        
+      }
+
+    }
+  }
+}
+/* Hero Section CSS */
+.hero{
+  display: flex;
+  color: black;
+  padding: 0 50px 0 50px;
+
+  .hero-1{
+    width: 50%;
+    margin-top: 10%;
+
+    & h1{
+      font-size: 60px;
+      display: flex;
+      width: auto;
+      position: relative;
+      align-items: center;
+      z-index: -1;
+
+
+      .line{
+        height: 4px;
+        flex-grow: 1;
+        background-color: #6c30d4;
+        margin-top: 28px;
+      }
+      }
+      .name{
+        color: #6c30d4;
+        font-size: 3.7rem;
+        width: 40%;
+    }
+    & p{
+      font-weight: 600;
+      font-size: 1.4rem;
+    }
+
+
+    
+  }
+  .hero-2{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin-top: 10%;
+    align-self: flex-end;
+
+    & img{
+      width: 90%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+
+@media (max-width:900px) {
+  header {
+    width: 100%;
+    z-index: 99999;
+
+    & nav {
+      position: relative;
+      flex-direction: column;
+      padding: 0px;
+      margin: 0px;
+      padding: 20px 0 20px 0;
+
+
+      & ul {
+        position: relative;
+        right: -110%;
+        order: 2;
+        flex-direction: column;
+        transition: all ease-out 0.4s;
+        margin: 25px 0 25px 0;
+        gap: 5vh;
+        padding-bottom: 50px;
+
+      }
+
+      & .second-div {
+        justify-content: flex-end;
+        align-items: center;
+        width: 90%;
+
+        & .resume{
+          margin-right: auto;
+        }
+        & .hamburgur{
+          display: block;
+          
+          #cross{
+            display: none;
+          }
+        }
+        }
+      }
+  }
+  .active ul {
+    width: 100%;
+    position: relative;
+    right: 0%;
+  }
+}
+
+
+
