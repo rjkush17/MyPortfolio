@@ -11,13 +11,13 @@
     ></script>
   </head>
   <body>
-     <!--<header>
+    <header>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Projects</a></li>
-          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
 
         <div class="second-div">
@@ -108,8 +108,81 @@
       </div>
       <div class="project-body">
       </div>
-    </section> -->
-    
+    </section>
+
+    <div class="contact">
+      <div class="contact-heading">
+        <h3>Let's Chat</h3>
+        <h1>You Can Send Me a Message Here</h1>
+        <p>let's create somethings together</p>
+
+        <div class="mail-box">
+          <div class="icon">
+            <img src="./img/mail.svg" alt="mail Icon" height="26px" />
+          </div>
+          <div class="mail">
+            <p>Mail me at</p>
+            <span>rishabhkushwahrj@gmail.com</span>
+          </div>
+        </div>
+        <div class="mail-box">
+          <div class="icon">
+            <img src="./img/phone.svg" alt="mail Icon" height="26px" />
+          </div>
+          <div class="mail">
+            <p>Call me at</p>
+            <span>+91 93404 62658</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form
+          action="https://formspree.io/f/xgejndqa"
+          method="POST"
+        >
+          <h2>
+            Send me a message<img
+              src="./img/rocket.svg"
+              alt="rocket Icon"
+              height="26px"
+            />
+          </h2>
+
+          <label>
+            <input type="email" name="email" placeholder="Email Address" required autocomplete="off"/>
+          </label>
+          <label>
+            <input type="text" name="name" placeholder="Enter Full Name" required autocomplete="off"/>
+          </label>
+          <label>
+            <input type="subject" name="subject" placeholder="Subject" required autocomplete="off"/>
+          </label>
+          <label>
+            <textarea maxlength="400" name="message" placeholder="Type me your Message Here....." required autocomplete="off"></textarea>
+          </label>
+          <button id="button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="upper-box">
+        <div class="footer-name footer-flex">
+          <h2> <strong>RISHABH KUSHWAH</strong></h2>
+          <p>I am a student specializing in front-end web development, actively engaged in the process of acquiring knowledge and skills. My goal is to become a highly skilled web developer, leading to a successful career.</p>
+        </div>
+        <div class="footer-links  footer-flex">
+          <h2>Social Media</h2>
+          <div class="links-icon">
+            <span><a href=""><img src="./img/github1.svg"" height="25" alt=""></a></span>
+            <span><a href=""><img src="./img/telegram.svg"" height="25" alt=""></a></span>
+            <span><a href=""><img src="./img/instagram.svg"" height="25" alt=""></a></span>
+            <span><a href=""><img src="./img/linkedin.svg"" height="25" alt=""></a></span>
+        </div>
+      </div>
+      </div>
+      <div class="thanks">© 2023 RISHABH KUSHWAH | Handcrafted with ❤️ | Made by RISHABH KUSHWAH</div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
