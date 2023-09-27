@@ -1,19 +1,19 @@
-// let hamburgur = document.querySelector('.hamburgur');
-// let header = document.querySelector('header');
-// let bars = document.querySelector('#bars');
-// let cross = document.querySelector('#cross');
+let hamburgur = document.querySelector('.hamburgur');
+let header = document.querySelector('header');
+let bars = document.querySelector('#bars');
+let cross = document.querySelector('#cross');
 
-// hamburgur.addEventListener('click',function(){
-//     header.classList.toggle('active');
+hamburgur.addEventListener('click',function(){
+    header.classList.toggle('active');
 
-//     if (header.classList.contains('active')) {
-//         bars.style.display = 'none';
-//         cross.style.display = 'block';
-//       } else {
-//         bars.style.display = 'block';
-//         cross.style.display = 'none';
-//       }
-//     });
+    if (header.classList.contains('active')) {
+        bars.style.display = 'none';
+        cross.style.display = 'block';
+      } else {
+        bars.style.display = 'block';
+        cross.style.display = 'none';
+      }
+    });
  
 let url = './projectData.json'
 fetch(url)
@@ -35,8 +35,7 @@ data.projects.forEach(function(elem, ind){
     </div>
 </div>`;
 });
-
-console.log(projectData)
 document.querySelector('.project-body').innerHTML = projectData;
 }
+
 

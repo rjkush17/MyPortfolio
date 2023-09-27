@@ -46,7 +46,7 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--text-heading)
+  color: var(--text-normal)
 }
 
 #button {
@@ -73,15 +73,18 @@ a {
   background: var(--bg-color);
 }
 
+
 /* NavBar CSS */
 header {
   width: 100%;
+  position: fixed;
+  background-color: white;
 
   & nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: 900;
+    font-weight: 600;
     height: 50px;
     padding: 15px 100px;
 
@@ -106,10 +109,10 @@ header {
         border-radius: 5px;
         background-color: var(--text-heading);
         color: white;
-        padding: 8px 11px;
+        padding: 10px 13px;
         font-weight: 400;
         transition: all ease-in-out 0.6;
-        font-weight: 600;
+        font-weight: 500;
         letter-spacing: 1px;
 
         & i {
@@ -134,7 +137,7 @@ header {
 .hero {
   display: flex;
   color: black;
-  padding: 0 50px 0 50px;
+  padding: 0 25px 0 50px;
 
   .hero-1 {
     width: 50%;
@@ -159,8 +162,8 @@ header {
 
     .name {
       color: #6c30d4;
-      font-size: 3.7rem;
-      width: 40%;
+      font-size: 3rem;
+      width: 50%;
     }
 
     & p {
@@ -290,7 +293,7 @@ header {
   .project-body {
     display: grid;
     grid-template-columns: repeat(3, 280px);
-    gap: 3rem;
+    gap: 2.5rem;
     justify-content: center;
     padding-top: 4rem;
 
@@ -376,7 +379,7 @@ header {
     .mail-box{
       
       display: flex;
-      font-weight: 900;
+      font-weight: 700;
       line-height: 1.2;
       width: 250px;
       padding: 8px;
@@ -488,7 +491,7 @@ header {
   }
 }
 
-@media (max-width:900px) {
+@media (max-width:950px) {
   header {
     width: 100%;
     z-index: 99999;
@@ -498,7 +501,7 @@ header {
       flex-direction: column;
       padding: 0px;
       margin: 0px;
-      padding: 20px 0 20px 0;
+      padding: 5px 0 5px 0;
 
 
       & ul {
@@ -507,9 +510,10 @@ header {
         order: 2;
         flex-direction: column;
         transition: all ease-out 0.4s;
-        margin: 25px 0 25px 0;
+        margin: 0 0 25px 0;
         gap: 5vh;
         padding-bottom: 50px;
+        padding-top: 25px;
 
       }
 
@@ -530,7 +534,7 @@ header {
           }
         }
       }
-    }
+    }    
   }
 
   .active ul {
@@ -538,4 +542,314 @@ header {
     position: relative;
     right: 0%;
   }
+
+  .hero{
+    flex-direction: column;
+    padding-top: 4rem;
+
+    .hero-1{
+      width: auto;
+      text-align: center;
+      line-height: 1.1;
+      height: auto;
+
+      & h1{
+        display: block;
+        font-size: 40px;
+      }
+
+      & h1 .line{
+        display: none;
+      }
+      & p{
+        font-size: 1rem;
+        width: 100%;
+        margin: .5rem auto auto auto
+      }
+    }
+    .hero-2{
+      width: auto;
+      margin-top: 0%;
+    }
+  }
+
+  .about{
+    margin-top: auto;
+    max-width: 95%;
+
+    .about-head{
+      & h1{
+        font-size: 2.5rem;
+      }
+      & p{
+        max-width: 100%;
+        font-size: 1.1rem;
+      }
+    }
+    .about-body{
+      grid-template-columns: 80%;
+      text-align: center;
+      gap: 0px;
+      justify-content: center;
+
+      .card{
+        text-align: center;
+        margin: auto;
+      }
+    }
+  }
+
+  .projects{
+    width: 100%;
+
+    .project-head{
+      & h1{
+        font-size: 2.5rem;
+      }
+      & p{
+        max-width: fit-content;
+        font-size: 1.2rem;
+      }
+    }
+    .project-body{
+      grid-template-columns: 280px 280px ;
+    }
+  }
+
+  .contact{
+    display: block;
+
+    .contact-heading{
+      padding: 0 0 0 0;
+      text-align: center;
+
+      .mail-box{
+        float: inline-end;
+      }
+    }
+    .contact-form{
+      text-align: center;
+      
+      & form{
+        align-items: center;
+        & h2{
+          margin-bottom: 0px;
+          margin-top: .5rem;
+        }
+      }
+    }
+  }
+
+  .footer{
+    padding-top: 3rem;
+
+    .upper-box{
+      padding-bottom: 3rem;
+
+      .footer-name{
+        width: 22rem;
+      }
+    }
+
+    .thanks{
+      padding: 1rem ;
+    }
+  }
+
+  
+}
+
+
+@media (max-width: 580px){
+
+  #button {
+    padding: 10px 14px;
+    background: rgb(13, 0, 36);
+    background: linear-gradient(90deg, rgba(13, 0, 36, 1) 0%, rgba(106, 51, 213, 1) 0%, rgba(111, 51, 215, 1) 41%, rgba(162, 81, 223, 1) 99%, rgba(203, 168, 223, 1) 100%);
+    color: white;
+    font-size:0.7rem;
+    font-weight: 600;
+    letter-spacing: .8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: all ease 0.3s;
+  }
+
+  .hero{
+    padding: 0 0.5rem ;
+
+    .hero-1{
+      margin: 18% 0 0 0;
+
+      & h1{
+        font-size: 25px;
+      }
+
+      .name{
+        font-size: 30px;
+      }
+      & p{
+        font-size: 0.9rem;
+      }
+      
+    }
+  }
+
+  .about{
+
+    .about-head{
+
+      & h1{
+        font-size: 1.3rem;
+      }
+      & p{
+        font-size: 0.8rem;
+      }
+    }
+    .about-body{
+      grid-template-columns: 98%;
+
+      .card{
+        padding: 0.2rem .5rem;
+      }
+      .know-me{
+        & h4{
+          font-size: 1.2rem;
+          margin-bottom: 0.4rem;
+          font-weight: 800;
+        }
+        .know-card-contain{
+          
+          & p{
+            font-size: .8rem;
+          }
+        }
+      }
+    }
+    .skills{
+
+      .card-heading{
+        font-size: 0.8rem;
+        font-weight: 800;
+      }
+      .card-contain{
+
+        & span{
+          padding: 5px;
+          font-size: 0.6rem;
+          font-weight: 700;
+          gap: 4px;
+          letter-spacing: 0.1px;
+
+          & img{
+            height: 16px;
+          }
+        }
+      }
+    }
+    
+  }
+  .projects{
+    max-width: 94%;
+    margin:.5rem .4rem 2vh .4rem;
+
+    .project-head{
+
+      & h1{
+        font-size:1.3rem;
+      }
+      & p{
+        font-size: 0.8rem;
+      }
+
+    }
+    .project-body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .project{
+        width: 22rem;
+        letter-spacing: 0.1px;
+      }
+    }
+  }
+  .contact{
+    padding: 2rem .5rem;
+
+    .contact-heading{
+      
+      & h3{
+        font-size: 1rem;
+      }
+      & h1{
+        font-size: 1.5rem;
+      }
+      & p{
+        font-weight: 700;
+      }
+    }
+    .contact-form{
+
+      & form{
+        gap: .6rem;
+        & h2{
+          margin: 1.2rem auto .2rem auto;
+        }
+        & input, textarea{
+          max-width: 60%;
+          height: 1.8rem;
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+
+  .footer{
+    padding-top: 1rem;
+
+    .upper-box{
+      flex-direction: column-reverse;
+      width: 90%;
+      padding-bottom: 1.5rem;
+
+      .footer-name{
+        width: 90%;
+        & p{
+          font-size: .7rem;
+        }
+       }
+    }
+    .footer-flex{
+      padding-top: .1rem;
+
+      & h2{
+        font-size: 1rem;
+        padding-bottom: .2rem;
+        margin-bottom: 0;
+      }
+    }
+    .footer-links{
+
+      .links-icon{
+        
+       & span{
+        margin-right: .5rem;
+        & img{
+          height: 20px;
+        }
+       }
+      }
+    }
+
+    .thanks{
+      padding: 0.8rem;
+      font-size: .6rem;
+    }
+    
+  }
+  
 }
