@@ -12,18 +12,29 @@
   --text-heading: #6c30d4;
   --text-normal: #3d3d3f;
   --gray-bg:rgba(153, 153, 153, .2);
+  --linear-bg:linear-gradient(90deg, rgba(13, 0, 36, 1) 0%, rgba(106, 51, 213, 1) 0%, rgba(111, 51, 215, 1) 41%, rgba(162, 81, 223, 1) 99%, rgba(203, 168, 223, 1) 100%);
 
   /* Dark Modes Varibles*/
-  --dark-bg-color: rgb(42, 42, 48, 1);
-  /* --text-heading:#ecc9ub; */
-  /* --text-normal: #dfdbe5; */
 
+}
+
+.dark-mode{
+  --bg-color: rgb(42, 42, 48, 1);
+  --text-heading: #ff4533;
+  --text-normal: #dfdbe5;
+  --gray-bg:rgba(98, 97, 97, 0.2);
+  --linear-bg: linear-gradient(90deg, rgba(255,69,51,1) 10%, rgba(241,64,47,1) 71%, rgba(205,72,23,1) 99%);
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
 }
 
 body {
@@ -36,7 +47,6 @@ body {
   letter-spacing: 0.8px;
   overflow-x: hidden;
   font-size: 10px;
-  scroll-behavior: smooth;
 
 }
 
@@ -52,8 +62,7 @@ a {
 #button {
   padding: 15px 40px;
   background: rgb(13, 0, 36);
-  background: linear-gradient(90deg, rgba(13, 0, 36, 1) 0%, rgba(106, 51, 213, 1) 0%, rgba(111, 51, 215, 1) 41%, rgba(162, 81, 223, 1) 99%, rgba(203, 168, 223, 1) 100%);
-  color: white;
+  background: var(--linear-bg);
   font-size: 1rem;
   font-weight: 900;
   letter-spacing: 2px;
@@ -62,6 +71,10 @@ a {
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   transition: all ease 0.3s;
+
+  & a{
+    color: var(--bg-color)
+  }
 }
 
 #button:active {
@@ -69,16 +82,47 @@ a {
 }
 
 #button:hover {
-  color: var(--text-heading);
   background: var(--bg-color);
+
+  & a{
+    color: var(--text-heading);
+  }
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  color: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--text-heading);
+  border-radius: 4px;
+  
+}
+::-ms-scrollbar {
+  width: 10px;
+  color: var(--bg-color);
+}
+::-ms-scrollbar-thumb {
+  background-color: var(--text-heading);
+  border-radius: 4px;
+  
+}
+::-moz-scrollbar {
+  width: 10px;
+  color: var(--bg-color);
+}
+::-moz-scrollbar-thumb {
+  background-color: var(--text-heading);
+  border-radius: 4px;
+  
+}
 
 /* NavBar CSS */
 header {
   width: 100%;
   position: fixed;
-  background-color: white;
+  background-color: var(--bg-color);
+  z-index: 999;
 
   & nav {
     display: flex;
@@ -97,6 +141,28 @@ header {
       font-size: 20px;
       background-color: var(--bg-color);
 
+      & li{
+          position: relative;
+
+        & a:before{
+          content: '';
+          position: absolute;
+          bottom: -3px;
+          height: 4px;
+          width: 100%;
+          background-color: var(--text-heading);
+          border-radius: 50px;
+          transform:scaleX(0);
+          transition: transform 0.1s linear;
+        }
+        & a:hover{
+          color: var(--text-heading);
+        }
+        & a:hover::before{
+          transform: scaleX(1);
+        }
+      }
+
     }
 
     .second-div {
@@ -104,24 +170,37 @@ header {
       align-items: center;
       gap: 30px;
 
-      & button {
+      & a {
         border: none;
         border-radius: 5px;
         background-color: var(--text-heading);
-        color: white;
+        color: var(--bg-color);
+        font-size: 1rem;
         padding: 10px 13px;
-        font-weight: 400;
-        transition: all ease-in-out 0.6;
         font-weight: 500;
         letter-spacing: 1px;
+        transition: all linear 0.3s;
+        
 
         & i {
           margin-left: 5px;
         }
       }
+      & a:hover{
+          color: var(--text-heading);
+          background: var(--bg-color);
+          border: var(--text-heading) solid 2px;
+      }
+      & a:active{
+        scale: 90%;
+      }
 
       & .icon {
         font-size: 30px;
+
+        #moon{
+          display: none;
+        }
       }
 
       .hamburgur {
@@ -136,12 +215,13 @@ header {
 /* Hero Section CSS */
 .hero {
   display: flex;
-  color: black;
+  color: var(--text-normal);
   padding: 0 25px 0 50px;
 
   .hero-1 {
     width: 50%;
-    margin-top: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
 
     & h1 {
       font-size: 60px;
@@ -155,13 +235,13 @@ header {
       .line {
         height: 4px;
         flex-grow: 1;
-        background-color: #6c30d4;
+        background-color:var(--text-heading);
         margin-top: 28px;
       }
     }
 
     .name {
-      color: #6c30d4;
+      color: var(--text-heading);
       font-size: 3rem;
       width: 50%;
     }
@@ -246,7 +326,7 @@ header {
       gap: 1rem;
 
       & span {
-        background: rgba(153, 153, 153, .2);
+        background: var(--gray-bg);
         padding: 10px;
         display: flex;
         align-items: center;
@@ -258,9 +338,9 @@ header {
       }
 
       & span:hover {
-        color: white;
+        color: var(--bg-color);
         background: rgb(13, 0, 36);
-        background: linear-gradient(90deg, rgba(13, 0, 36, 1) 0%, rgba(106, 51, 213, 1) 0%, rgba(111, 51, 215, 1) 41%, rgba(162, 81, 223, 1) 99%, rgba(203, 168, 223, 1) 100%);
+        background: var(--linear-bg);
       }
     }
   }
@@ -299,9 +379,10 @@ header {
 
     .project {
       min-height: 350px;
-      background-color: #6c30d4;
+      background-color: var(--text-heading);
       overflow: hidden;
       border-radius: 5px;
+      transition: all ease-in-out .5s;
 
       .img-box {
         width: 100%;
@@ -320,21 +401,22 @@ header {
         position: relative;
 
         & h1 {
-          color: white;
+          color: var(--bg-color);
           text-transform: uppercase;
           letter-spacing: 1.8px;
           height: 28px;
+          overflow: hidden;
         }
 
         & p {
-          color: white;
+          color: var(--bg-color);
           font-size: 0.8rem;
           height: 80px;
         }
 
         & button {
           padding: 6px 17px;
-          background: white;
+          background: var(--bg-color);
           font-size: 1rem;
           font-weight: 700;
           letter-spacing: 2px;
@@ -343,12 +425,16 @@ header {
           border-radius: 5px;
           transition: all ease 0.3s;
           height: 32px;
+          z-index: 0;
         }
 
         & button:active {
           scale: 90%;
         }
       }
+    }
+    .project:hover{
+      scale: 110%;
     }
   }
 }
@@ -386,7 +472,7 @@ header {
       gap: 12px;
       text-align:start;
       margin: 25px auto 0 auto;
-      background-color: rgba(153, 153, 153, .2);
+      background-color: var(--gray-bg);
       border-radius: 5px;
 
       .mail{
@@ -395,7 +481,7 @@ header {
           font-size: .8rem;
          }
          & span{
-          color: #6c30d4;
+          color: var(--text-heading);
          }
       }
     }
@@ -429,9 +515,9 @@ header {
         min-height: 5rem;
       }
       & input:focus,textarea:focus{
-        outline: #6c30d4 2px solid;
+        outline: var(--text-heading) 2px solid;
         font-weight: 400;
-        color: #6c30d4;
+        color: var(--text-heading);
       }
 
       #button{
@@ -443,8 +529,9 @@ header {
 
 .footer{
   background-color: black;
-  color: white;
+  color: var(--bg-color);
   padding-top: 4rem;
+  color: white;
 
   .upper-box{
     width: 84%;
@@ -666,7 +753,7 @@ header {
     padding: 10px 14px;
     background: rgb(13, 0, 36);
     background: linear-gradient(90deg, rgba(13, 0, 36, 1) 0%, rgba(106, 51, 213, 1) 0%, rgba(111, 51, 215, 1) 41%, rgba(162, 81, 223, 1) 99%, rgba(203, 168, 223, 1) 100%);
-    color: white;
+    color: var(--bg-color);
     font-size:0.7rem;
     font-weight: 600;
     letter-spacing: .8px;
@@ -775,8 +862,13 @@ header {
         width: 22rem;
         letter-spacing: 0.1px;
       }
+      .project:hover{
+        scale: 100%;
+      }
     }
+   
   }
+  
   .contact{
     padding: 2rem .5rem;
 
@@ -795,15 +887,19 @@ header {
     .contact-form{
 
       & form{
-        gap: .6rem;
+     
         & h2{
           margin: 1.2rem auto .2rem auto;
         }
+       & label{
+        width: 90%;
+
         & input, textarea{
-          max-width: 60%;
-          height: 1.8rem;
-          font-size: .8rem;
+          max-width: 80%;
+          /* height: 1.8rem;
+          font-size: .8rem; */
         }
+       }
       }
     }
   }

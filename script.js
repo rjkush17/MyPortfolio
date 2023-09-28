@@ -1,3 +1,4 @@
+
 let hamburgur = document.querySelector('.hamburgur');
 let header = document.querySelector('header');
 let bars = document.querySelector('#bars');
@@ -31,11 +32,44 @@ data.projects.forEach(function(elem, ind){
     <div class="description-box">
       <h1>${elem.name}</h1>
       <p>${elem.description}</p>
-      <button ><a href='${elem.link}' target="_blank">View</a></button>
+      <button ><a href='${elem.img}' target="_blank">View</a></button>
     </div>
 </div>`;
 });
 document.querySelector('.project-body').innerHTML = projectData;
 }
 
+let sun = document.querySelector('#sun');
+let icon = document.querySelector('.icon');
+let body = document.querySelector('body')
+let moon = document.querySelector('#moon');
 
+
+icon.addEventListener('click',function(){
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
+      sun.style.display = 'none';
+      moon.style.display = 'block';
+    } else {
+      sun.style.display = 'block';
+      moon.style.display = 'none';
+    }
+
+    let isNightMode = body.classList.contains('dark-mode')
+    localStorage.setItem('dark-mode', isNightMode);
+})
+
+
+function setInitialTheme(){
+  const  saveMode = localStorage.getItem('dark-mode')
+
+ 
+
+  if(saveMode == "true"){
+    body.classList.add('dark-mode')
+    console.log('inite')
+  }
+}
+
+setInitialTheme();
