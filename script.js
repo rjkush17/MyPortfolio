@@ -27,12 +27,12 @@ function printdata(data){
 data.projects.forEach(function(elem, ind){
   projectData += `<div class="project">
     <div class="img-box">
-      <img src="./img/projectIMG/todo.jpg" alt="">
+      <img src="./img/projectIMG/${elem.img}" alt="">
     </div>
     <div class="description-box">
       <h1>${elem.name}</h1>
       <p>${elem.description}</p>
-      <button ><a href='${elem.img}' target="_blank">View</a></button>
+      <button ><a href='${elem.link}' target="_blank">View</a></button>
     </div>
 </div>`;
 });

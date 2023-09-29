@@ -2,21 +2,21 @@
     "projects": [
       {
         "name": "todo",
-        "img": "todo",
-        "description": "I will upload data and links about project soon ",
-        "link": ""
+        "img": "todo.jpg",
+        "description": "his todo app allows users to create, organize, and track their tasks. It features a clean and intuitive interface,",
+        "link": "https://github.com/rjkush17/Todo-React-App.git"
       },
       {
         "name": "Weathing-App",
-        "img": "todo",
+        "img": "weather.avif",
         "description": "I will upload data and links about project soon ",
         "link": ""
       },
       {
         "name": "Browser Home page",
-        "img": "todo",
-        "description": "I will upload data and links about project soon ",
-        "link": ""
+        "img": "homepage.jpg",
+        "description": "A homepage for browser with motives quotes, todo using localstroage and new wallpaper on every refresh ",
+        "link": "https://github.com/rjkush17/Customized-Homepage-for-browser.git"
       }
     ]
   }
