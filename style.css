@@ -387,6 +387,8 @@ header {
       .img-box {
         width: 100%;
         height: 12rem;
+        background: var(--gray-bg);
+        
 
         & img {
           width: 100%;

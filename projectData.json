@@ -2,21 +2,27 @@
     "projects": [
       {
         "name": "todo",
-        "img": "todo.jpg",
+        "img": "todo.svg",
         "description": "his todo app allows users to create, organize, and track their tasks. It features a clean and intuitive interface,",
         "link": "https://github.com/rjkush17/Todo-React-App.git"
       },
       {
         "name": "Weathing-App",
-        "img": "weather.avif",
+        "img": "weathering.svg",
         "description": "I will upload data and links about project soon ",
         "link": ""
       },
       {
         "name": "Browser Home page",
-        "img": "homepage.jpg",
+        "img": "homepage.svg",
         "description": "A homepage for browser with motives quotes, todo using localstroage and new wallpaper on every refresh ",
         "link": "https://github.com/rjkush17/Customized-Homepage-for-browser.git"
+      },
+      {
+        "name": "Form Validation",
+        "img": "form.svg",
+        "description": "A form Ragistration with complete validations function",
+        "link": "https://github.com/rjkush17/form-validation.git"
       }
     ]
   }
