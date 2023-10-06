@@ -1,4 +1,5 @@
 
+
 let hamburgur = document.querySelector('.hamburgur');
 let header = document.querySelector('header');
 let bars = document.querySelector('#bars');
@@ -73,3 +74,9 @@ function setInitialTheme(){
 }
 
 setInitialTheme();
+
+let loader= document.querySelector('#preloader')
+
+window.addEventListener('load', function(){
+  loader.style.display = "none";
+})
