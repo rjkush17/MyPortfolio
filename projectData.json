@@ -3,32 +3,37 @@
       {
         "name": "Blog Web App",
         "img": "blogapp.svg",
-        "description": "A web blog app using tailwind css and react.js. <a href='https://muzieblog.netlify.app/' target='_blank'>Check here to view Project</a>,",
-        "link": "https://github.com/rjkush17/Todo-React-App.git"
+        "description": "A web blog app using tailwind css and react.js. a web app where you can see amny blogs,",
+        "code": "https://github.com/rjkush17/Todo-React-App.git",
+        "link": "https://muzieblog.netlify.app/"
       },
       {
         "name": "todo",
         "img": "todo.svg",
         "description": "his todo app allows users to create, organize, and track their tasks. It features a clean and intuitive interface,",
-        "link": "https://github.com/rjkush17/Todo-React-App.git"
+        "code": "https://github.com/rjkush17/Todo-React-App.git",
+        "link": "https://todoapprishabh.netlify.app/"
       },
       {
         "name": "Form Validation",
         "img": "form.svg",
         "description": "A form Ragistration with complete validations function",
-        "link": "https://github.com/rjkush17/form-validation.git"
+        "code": "https://github.com/rjkush17/form-validation.git",
+        "link": "https://formvalidationrishabh.netlify.app/"
       },
       {
         "name": "Weathing-App",
         "img": "weathering.svg",
-        "description": "I will upload data and links about project soon ",
-        "link": ""
+        "description": "i weathering app using open weather api ",
+        "code": "https://github.com/rjkush17/weather-app",
+        "link": "https://weatheringapprishabh.netlify.app/"
       },
       {
         "name": "Browser Home page",
         "img": "homepage.svg",
         "description": "A homepage for browser with motives quotes, todo using localstroage and new wallpaper on every refresh ",
-        "link": "https://github.com/rjkush17/Customized-Homepage-for-browser.git"
+        "code": "https://github.com/rjkush17/Customized-Homepage-for-browser.git",
+        "link": "https://homepagerishabh.netlify.app/"
       }
       
     ]
