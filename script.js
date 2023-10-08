@@ -33,7 +33,7 @@ data.projects.forEach(function(elem, ind){
     <div class="description-box">
       <h1>${elem.name}</h1>
       <p>${elem.description}</p>
-      <button ><a href='${elem.code}' target="_blank">Code</a></button> <button ><a href='${elem.link}' target="_blank">View</a></button>
+      <a href='${elem.code}' class="pbutton" target="_blank">Code</a><a href='${elem.link}' class="pbutton" target="_blank">View</a>
     </div>
 </div>`;
 });

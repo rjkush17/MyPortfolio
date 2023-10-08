@@ -81,9 +81,7 @@ a {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   transition: all ease 0.3s;
 
-  & a{
     color: var(--bg-color)
-  }
 }
 
 #button:active {
@@ -93,9 +91,7 @@ a {
 #button:hover {
   background: var(--bg-color);
 
-  & a{
     color: var(--text-heading);
-  }
 }
 
 ::-webkit-scrollbar {
@@ -428,7 +424,7 @@ header {
           height: 80px;
         }
 
-        & button {
+        & .pbutton {
           padding: 6px 17px;
           background: var(--bg-color);
           font-size: 1rem;
@@ -440,9 +436,10 @@ header {
           transition: all ease 0.3s;
           height: 32px;
           z-index: 0;
+          margin-right: 15px;
         }
 
-        & button:active {
+        & .pbutton:active {
           scale: 90%;
         }
       }
