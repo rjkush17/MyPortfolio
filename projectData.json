@@ -22,6 +22,13 @@
         "link": "https://formvalidationrishabh.netlify.app/"
       },
       {
+        "name": "Password Genratos",
+        "img": "password.jpg",
+        "description": "Create random password with you requied lenght and configration",
+        "code": "https://github.com/rjkush17/form-validation",
+        "link": "https://passwordrishabh.netlify.app/"
+      },
+      {
         "name": "Weathing-App",
         "img": "weathering.svg",
         "description": "i weathering app using open weather api ",
