@@ -36,11 +36,11 @@
         "link": "https://weatheringapprishabh.netlify.app/"
       },
       {
-        "name": "Browser Home page",
-        "img": "homepage.svg",
-        "description": "A homepage for browser with motives quotes, todo using localstroage and new wallpaper on every refresh ",
-        "code": "https://github.com/rjkush17/Customized-Homepage-for-browser.git",
-        "link": "https://homepagerishabh.netlify.app/"
+        "name": "Contact Management",
+        "img": "contact.jpg",
+        "description": "A Small Project On Contact Managment Using React Redux Toolkit",
+        "code": "https://github.com/rjkush17/contact",
+        "link": "https://contact-rishabh.vercel.app/"
       }
       
     ]

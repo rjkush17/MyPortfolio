@@ -5,7 +5,8 @@
   font-style: normal;
 }
 
-#preloader{
+/* PreLoader CSS */
+#preloader {
   background: #070707 url('./assest/preloader.gif') no-repeat center;
   background-size: 10%;
   height: 100vh;
@@ -20,32 +21,30 @@
   --bg-color: #fbfbfb;
   --text-heading: #6c30d4;
   --text-normal: #3d3d3f;
-  --gray-bg:rgba(153, 153, 153, .2);
-  --linear-bg:linear-gradient(90deg, rgba(13, 0, 36, 1) 0%, rgba(106, 51, 213, 1) 0%, rgba(111, 51, 215, 1) 41%, rgba(162, 81, 223, 1) 99%, rgba(203, 168, 223, 1) 100%);
-
-  /* Dark Modes Varibles*/
-
+  --gray-bg: rgba(153, 153, 153, .2);
+  --linear-bg: linear-gradient(90deg, rgba(13, 0, 36, 1) 0%, rgba(106, 51, 213, 1) 0%, rgba(111, 51, 215, 1) 41%, rgba(162, 81, 223, 1) 99%, rgba(203, 168, 223, 1) 100%);
 }
 
-.dark-mode{
+ /* Dark Modes Varibles*/
+.dark-mode {
   --bg-color: rgb(42, 42, 48, 1);
   --text-heading: #ff4533;
   --text-normal: #dfdbe5;
-  --gray-bg:rgba(98, 97, 97, 0.2);
-  --linear-bg: linear-gradient(90deg, rgba(255,69,51,1) 10%, rgba(241,64,47,1) 71%, rgba(205,72,23,1) 99%);
+  --gray-bg: rgba(98, 97, 97, 0.2);
+  --linear-bg: linear-gradient(90deg, rgba(255, 69, 51, 1) 10%, rgba(241, 64, 47, 1) 71%, rgba(205, 72, 23, 1) 99%);
 }
 
+/* Universal CSS Code */
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-html{
+html {
   scroll-behavior: smooth;
   scroll-padding: 5rem;
 }
-
 body {
   width: 100%;
   margin: 0;
@@ -56,18 +55,22 @@ body {
   letter-spacing: 0.8px;
   overflow-x: hidden;
   font-size: 10px;
-
 }
-
 li {
   list-style: none;
 }
-
 a {
   text-decoration: none;
   color: var(--text-normal)
 }
 
+/* Custom background Selection Colors CSS */
+::selection{
+  background-color: var(--text-heading);
+  color: var(--bg-color);
+}
+
+/* Button CSS */
 #button {
   padding: 15px 40px;
   background: rgb(13, 0, 36);
@@ -78,22 +81,23 @@ a {
   border: none;
   outline: none;
   border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
   transition: all ease 0.3s;
-
-    color: var(--bg-color)
+  color: var(--bg-color)
 }
-
 #button:active {
   scale: 90%;
 }
-
 #button:hover {
   background: var(--bg-color);
 
-    color: var(--text-heading);
+  color: var(--text-heading);
 }
 
+/* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
   width: 10px;
   color: var(--bg-color);
@@ -101,7 +105,7 @@ a {
 ::-webkit-scrollbar-thumb {
   background-color: var(--text-heading);
   border-radius: 4px;
-  
+
 }
 ::-ms-scrollbar {
   width: 10px;
@@ -110,7 +114,7 @@ a {
 ::-ms-scrollbar-thumb {
   background-color: var(--text-heading);
   border-radius: 4px;
-  
+
 }
 ::-moz-scrollbar {
   width: 10px;
@@ -119,7 +123,7 @@ a {
 ::-moz-scrollbar-thumb {
   background-color: var(--text-heading);
   border-radius: 4px;
-  
+
 }
 
 
@@ -133,8 +137,14 @@ header {
   z-index: 999;
 
   & nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     font-weight: 600;
     height: 50px;
@@ -142,17 +152,23 @@ header {
 
 
     & ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       gap: 25px;
       font-size: 20px;
       background-color: var(--bg-color);
 
-      & li{
-          position: relative;
+      & li {
+        position: relative;
 
-        & a:before{
+        & a:before {
           content: '';
           position: absolute;
           bottom: -3px;
@@ -160,13 +176,22 @@ header {
           width: 100%;
           background-color: var(--text-heading);
           border-radius: 50px;
-          transform:scaleX(0);
+          -webkit-transform: scaleX(0);
+          -ms-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: -webkit-transform 0.1s linear;
+          transition: -webkit-transform 0.1s linear;
+          -o-transition: transform 0.1s linear;
           transition: transform 0.1s linear;
+          transition: transform 0.1s linear, -webkit-transform 0.1s linear;
         }
-        & a:hover{
+
+        & a:hover {
           color: var(--text-heading);
         }
-        & a:hover::before{
+        & a:hover::before {
+          -webkit-transform: scaleX(1);
+          -ms-transform: scaleX(1);
           transform: scaleX(1);
         }
       }
@@ -174,7 +199,11 @@ header {
     }
 
     .second-div {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       gap: 30px;
 
@@ -187,26 +216,30 @@ header {
         padding: 10px 13px;
         font-weight: 500;
         letter-spacing: 1px;
+        -webkit-transition: all linear 0.3s;
+        -o-transition: all linear 0.3s;
         transition: all linear 0.3s;
-        
 
         & i {
           margin-left: 5px;
         }
       }
-      & a:hover{
-          color: var(--text-heading);
-          background: var(--bg-color);
-          border: var(--text-heading) solid 2px;
+
+      & a:hover {
+        color: var(--text-heading);
+        background: var(--bg-color);
+        border: var(--text-heading) solid 2px;
       }
-      & a:active{
+
+      & a:active {
         scale: 90%;
       }
 
       & .icon {
         font-size: 30px;
+        cursor: pointer;
 
-        #moon{
+        #moon {
           display: none;
         }
       }
@@ -222,6 +255,8 @@ header {
 
 /* Hero Section CSS */
 .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: var(--text-normal);
   padding: 0 25px 0 50px;
@@ -233,17 +268,23 @@ header {
 
     & h1 {
       font-size: 60px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       width: auto;
       position: relative;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       z-index: -1;
 
 
       .line {
         height: 4px;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1;
-        background-color:var(--text-heading);
+        background-color: var(--text-heading);
         margin-top: 28px;
       }
     }
@@ -259,25 +300,30 @@ header {
       font-size: 1.4rem;
     }
 
-
-
   }
 
   .hero-2 {
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: end;
     margin-top: 10%;
+    -ms-flex-item-align: end;
     align-self: flex-end;
 
     & img {
       width: 90%;
       height: 100%;
+      -o-object-fit: cover;
       object-fit: cover;
     }
   }
 }
 
+/* About Section CSS */
 .about {
   max-width: 84%;
   margin: 10vh auto 0 auto;
@@ -302,7 +348,9 @@ header {
   }
 
   & .about-body {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 0.8rem 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 10vh;
 
@@ -329,15 +377,24 @@ header {
     }
 
     .card-contain {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       gap: 1rem;
 
       & span {
         background: var(--gray-bg);
         padding: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         font-size: 0.8rem;
         font-weight: 600;
@@ -354,6 +411,8 @@ header {
   }
 }
 
+
+/* Project Section CSS */
 .projects {
   max-width: 84%;
   margin: 10vh auto 4vh auto;
@@ -379,9 +438,13 @@ header {
   }
 
   .project-body {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 280px 2.5rem 280px 2.5rem 280px;
     grid-template-columns: repeat(3, 280px);
     gap: 2.5rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding-top: 4rem;
 
@@ -390,17 +453,20 @@ header {
       background-color: var(--text-heading);
       overflow: hidden;
       border-radius: 5px;
+      -webkit-transition: all ease-in-out .5s;
+      -o-transition: all ease-in-out .5s;
       transition: all ease-in-out .5s;
 
       .img-box {
         width: 100%;
         height: 12rem;
         background: white;
-        
+
 
         & img {
           width: 100%;
           height: 100%;
+          -o-object-fit: cover;
           object-fit: cover;
         }
       }
@@ -433,6 +499,8 @@ header {
           border: none;
           outline: none;
           border-radius: 5px;
+          -webkit-transition: all ease 0.3s;
+          -o-transition: all ease 0.3s;
           transition: all ease 0.3s;
           height: 32px;
           z-index: 0;
@@ -444,14 +512,18 @@ header {
         }
       }
     }
-    .project:hover{
+
+    .project:hover {
       scale: 110%;
     }
   }
 }
 
+/* Contact Section CSS */
 .contact {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 50% 4vh 40%;
   grid-template-columns: 50% 40%;
   gap: 4vw;
   padding: 1.5rem 7rem;
@@ -473,122 +545,150 @@ header {
       font-size: 1rem;
     }
 
-    .mail-box{
-      
+    .mail-box {
+
+      display: -webkit-box;
+
+      display: -ms-flexbox;
+
       display: flex;
       font-weight: 700;
       line-height: 1.2;
       width: 250px;
       padding: 8px;
       gap: 12px;
-      text-align:start;
+      text-align: start;
       margin: 25px auto 0 auto;
       background-color: var(--gray-bg);
       border-radius: 5px;
 
-      .mail{
+      .mail {
         font-size: .8rem;
-         & p{
+
+        & p {
           font-size: .8rem;
-         }
-         & span{
+        }
+
+        & span {
           color: var(--text-heading);
-         }
+        }
       }
     }
   }
 
   .contact-form {
-   
-    & form{
+
+    & form {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
       justify-content: flex-end;
       gap: 4vh;
 
-      & h2{
+      & h2 {
         font-size: x-large;
         margin-bottom: 2vh;
       }
 
-      & input, textarea{
+      & input,
+      textarea {
         border: none;
         background-color: var(--gray-bg);
         height: 2.4rem;
         width: 30rem;
-        font-weight:500;
+        font-weight: 500;
         font-size: 15px;
         border-radius: 6px;
         padding-left: 9px;
       }
-      & textarea{
+
+      & textarea {
         padding: 5px 5px;
         min-height: 5rem;
       }
-      & input:focus,textarea:focus{
+
+      & input:focus,
+      textarea:focus {
         outline: var(--text-heading) 2px solid;
         font-weight: 400;
         color: var(--text-heading);
       }
 
-      #button{
+      #button {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
       }
     }
   }
 }
 
-.footer{
+.footer {
   background-color: black;
   color: var(--bg-color);
   padding-top: 4rem;
   color: white;
 
-  .upper-box{
+  .upper-box {
     width: 84%;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     border-bottom: var(--text-heading) 4px solid;
     padding-bottom: 5rem;
   }
-  .footer-flex{
+
+  .footer-flex {
     padding-top: .8rem;
     padding-bottom: .8rem;
 
-    & h2{
+    & h2 {
       font-size: 20px;
       font-weight: 900;
       margin-bottom: 1.2rem;
     }
   }
-  .footer-name{
+
+  .footer-name {
     width: 32rem;
 
-    & p{
+    & p {
       font-size: .9rem;
-      font-weight:400;
+      font-weight: 400;
       letter-spacing: .1px;
       line-height: 1.8;
     }
   }
-  .footer-links{
-    
-    .links-icon{
+
+  .footer-links {
+
+    .links-icon {
       display: block;
 
-      & span{
+      & span {
         margin-right: 1.2rem;
       }
     }
   }
-  .thanks{
+
+  .thanks {
     padding: 2rem;
     font-size: 0.8rem;
     text-align: center;
   }
 }
 
+/* CSS For Tablet Width like Devices  */
 @media (max-width:950px) {
   header {
     width: 100%;
@@ -596,6 +696,9 @@ header {
 
     & nav {
       position: relative;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       padding: 0px;
       margin: 0px;
@@ -605,8 +708,15 @@ header {
       & ul {
         position: relative;
         right: -110%;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
         order: 2;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-transition: all ease-out 0.4s;
+        -o-transition: all ease-out 0.4s;
         transition: all ease-out 0.4s;
         margin: 0 0 25px 0;
         gap: 5vh;
@@ -616,7 +726,11 @@ header {
       }
 
       & .second-div {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         width: 90%;
 
@@ -632,7 +746,7 @@ header {
           }
         }
       }
-    }    
+    }
   }
 
   .active ul {
@@ -641,96 +755,115 @@ header {
     right: 0%;
   }
 
-  .hero{
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding-top: 4rem;
 
-    .hero-1{
+    .hero-1 {
       width: auto;
       text-align: center;
       line-height: 1.1;
       height: auto;
 
-      & h1{
+      & h1 {
         display: block;
         font-size: 40px;
       }
 
-      & h1 .line{
+      & h1 .line {
         display: none;
       }
-      & p{
+
+      & p {
         font-size: 1rem;
         width: 100%;
         margin: .5rem auto auto auto
       }
     }
-    .hero-2{
+
+    .hero-2 {
       width: auto;
       margin-top: 0%;
     }
   }
 
-  .about{
-    margin-top: auto;
+  .about {
+    margin-top: 50px;
     max-width: 95%;
 
-    .about-head{
-      & h1{
+    .about-head {
+      & h1 {
         font-size: 2.5rem;
       }
-      & p{
+
+      & p {
         max-width: 100%;
         font-size: 1.1rem;
       }
     }
-    .about-body{
+
+    .about-body {
+      -ms-grid-columns: 80%;
       grid-template-columns: 80%;
       text-align: center;
       gap: 0px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
 
-      .card{
+      .card {
         text-align: center;
         margin: auto;
       }
     }
   }
 
-  .projects{
+  .projects {
     width: 100%;
 
-    .project-head{
-      & h1{
+    .project-head {
+      & h1 {
         font-size: 2.5rem;
       }
-      & p{
+
+      & p {
+        max-width: -webkit-fit-content;
+        max-width: -moz-fit-content;
         max-width: fit-content;
         font-size: 1.2rem;
       }
     }
-    .project-body{
-      grid-template-columns: 280px 280px ;
+
+    .project-body {
+      -ms-grid-columns: 280px 280px;
+      grid-template-columns: 280px 280px;
     }
   }
 
-  .contact{
+  .contact {
     display: block;
 
-    .contact-heading{
+    .contact-heading {
       padding: 0 0 0 0;
       text-align: center;
 
-      .mail-box{
+      .mail-box {
         float: inline-end;
       }
     }
-    .contact-form{
+
+    .contact-form {
       text-align: center;
-      
-      & form{
+
+      & form {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
-        & h2{
+
+        & h2 {
           margin-bottom: 0px;
           margin-top: .5rem;
         }
@@ -738,226 +871,259 @@ header {
     }
   }
 
-  .footer{
+  .footer {
     padding-top: 3rem;
 
-    .upper-box{
+    .upper-box {
       padding-bottom: 3rem;
 
-      .footer-name{
+      .footer-name {
         width: 22rem;
       }
     }
 
-    .thanks{
-      padding: 1rem ;
+    .thanks {
+      padding: 1rem;
     }
   }
 
-  
+
 }
 
 
-@media (max-width: 580px){
+/* CSS for Mobile Devices */
+@media (max-width: 580px) {
 
   #button {
     padding: 10px 14px;
     background: rgb(13, 0, 36);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(13, 0, 36, 1)), color-stop(0%, rgba(106, 51, 213, 1)), color-stop(41%, rgba(111, 51, 215, 1)), color-stop(99%, rgba(162, 81, 223, 1)), to(rgba(203, 168, 223, 1)));
+    background: -o-linear-gradient(left, rgba(13, 0, 36, 1) 0%, rgba(106, 51, 213, 1) 0%, rgba(111, 51, 215, 1) 41%, rgba(162, 81, 223, 1) 99%, rgba(203, 168, 223, 1) 100%);
     background: linear-gradient(90deg, rgba(13, 0, 36, 1) 0%, rgba(106, 51, 213, 1) 0%, rgba(111, 51, 215, 1) 41%, rgba(162, 81, 223, 1) 99%, rgba(203, 168, 223, 1) 100%);
     color: var(--bg-color);
-    font-size:0.7rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 900;
     letter-spacing: .8px;
     border: none;
     outline: none;
     border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
   }
 
-  .hero{
-    padding: 0 0.5rem ;
+  .hero {
+    padding: 35px 25px 0 25px; 
 
-    .hero-1{
-      margin: 18% 0 0 0;
+    .hero-1 {
+      margin: 18% 0 15px 0;
 
-      & h1{
+      & h1 {
         font-size: 25px;
       }
 
-      .name{
+      .name {
         font-size: 30px;
       }
-      & p{
+
+      & p {
         font-size: 0.9rem;
       }
-      
+    }
+
+    .hero-2{
+      justify-content: center;
     }
   }
 
-  .about{
+  .about {
 
-    .about-head{
+    .about-head {
 
-      & h1{
+      margin-bottom: 20px;
+
+      & h1 {
         font-size: 1.3rem;
       }
-      & p{
+
+      & p {
         font-size: 0.8rem;
       }
     }
-    .about-body{
+
+    .about-body {
+      -ms-grid-columns: 98%;
       grid-template-columns: 98%;
 
-      .card{
-        padding: 0.2rem .5rem;
+      .card {
+        padding: 1rem .5rem;
       }
-      .know-me{
-        & h4{
+
+      .know-me {
+        & h4 {
           font-size: 1.2rem;
           margin-bottom: 0.4rem;
           font-weight: 800;
         }
-        .know-card-contain{
-          
-          & p{
+
+        .know-card-contain {
+
+          & p {
             font-size: .8rem;
           }
         }
       }
     }
-    .skills{
 
-      .card-heading{
+    .skills {
+
+      .card-heading {
         font-size: 0.8rem;
         font-weight: 800;
       }
-      .card-contain{
 
-        & span{
-          padding: 5px;
-          font-size: 0.6rem;
-          font-weight: 700;
-          gap: 4px;
-          letter-spacing: 0.1px;
+      .card-contain {
 
-          & img{
-            height: 16px;
+        justify-content: center;
+      }
+    }
+
+  }
+
+  .projects {
+    max-width: 94%;
+    margin: 3.5rem .4rem 1vh .4rem;
+
+    .project-head {
+
+      & h1 {
+        font-size: 1.3rem;
+      }
+
+      & p {
+        font-size: 0.8rem;
+      }
+
+    }
+
+    .project-body {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      .project {
+        width: 22rem;
+        letter-spacing: 0.1px;
+      }
+
+      .project:hover {
+        scale: 100%;
+      }
+    }
+
+  }
+
+  .contact {
+    padding: 2rem .5rem;
+
+    .contact-heading {
+
+      & h3 {
+        font-size: 1rem;
+      }
+
+      & h1 {
+        font-size: 1.5rem;
+      }
+
+      & p {
+        font-weight: 700;
+      }
+    }
+
+    .contact-form {
+
+      & form {
+
+        & h2 {
+          margin: 1.2rem auto .2rem auto;
+        }
+
+        & label {
+          width: 90%;
+
+          & input,
+          textarea {
+            max-width: 95%;
+            height: 3rem;
+          /
           }
         }
       }
     }
-    
-  }
-  .projects{
-    max-width: 94%;
-    margin:.5rem .4rem 2vh .4rem;
-
-    .project-head{
-
-      & h1{
-        font-size:1.3rem;
-      }
-      & p{
-        font-size: 0.8rem;
-      }
-
-    }
-    .project-body{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .project{
-        width: 22rem;
-        letter-spacing: 0.1px;
-      }
-      .project:hover{
-        scale: 100%;
-      }
-    }
-   
-  }
-  
-  .contact{
-    padding: 2rem .5rem;
-
-    .contact-heading{
-      
-      & h3{
-        font-size: 1rem;
-      }
-      & h1{
-        font-size: 1.5rem;
-      }
-      & p{
-        font-weight: 700;
-      }
-    }
-    .contact-form{
-
-      & form{
-     
-        & h2{
-          margin: 1.2rem auto .2rem auto;
-        }
-       & label{
-        width: 90%;
-
-        & input, textarea{
-          max-width: 80%;
-          /* height: 1.8rem;
-          font-size: .8rem; */
-        }
-       }
-      }
-    }
   }
 
-  .footer{
+  .footer {
     padding-top: 1rem;
 
-    .upper-box{
+    .upper-box {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
       flex-direction: column-reverse;
       width: 90%;
       padding-bottom: 1.5rem;
 
-      .footer-name{
+      .footer-name {
         width: 90%;
-        & p{
+
+        & p {
           font-size: .7rem;
         }
-       }
+      }
     }
-    .footer-flex{
+
+    .footer-flex {
       padding-top: .1rem;
 
-      & h2{
+      & h2 {
         font-size: 1rem;
         padding-bottom: .2rem;
         margin-bottom: 0;
       }
     }
-    .footer-links{
 
-      .links-icon{
-        
-       & span{
-        margin-right: .5rem;
-        & img{
-          height: 20px;
+    .footer-links {
+
+      .links-icon {
+
+        & span {
+          margin-right: .5rem;
+
+          & img {
+            height: 20px;
+          }
         }
-       }
       }
     }
 
-    .thanks{
+    .thanks {
       padding: 0.8rem;
       font-size: .6rem;
     }
-    
-  }
-  
-}
 
+  }
+
+}
