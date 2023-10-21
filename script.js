@@ -1,5 +1,4 @@
-
-
+// NavBar JavaScript Code 
 let hamburgur = document.querySelector('.hamburgur');
 let header = document.querySelector('header');
 let bars = document.querySelector('#bars');
@@ -17,6 +16,8 @@ hamburgur.addEventListener('click',function(){
       }
     });
  
+
+    // Project JavaScript Code 
 let url = './projectData.json'
 fetch(url)
 .then(res => res.json())
@@ -40,11 +41,12 @@ data.projects.forEach(function(elem, ind){
 document.querySelector('.project-body').innerHTML = projectData;
 }
 
+
+// Dark-Mode JavaScript Code and Save it Theme in local Storage
 let sun = document.querySelector('#sun');
 let icon = document.querySelector('.icon');
 let body = document.querySelector('body')
 let moon = document.querySelector('#moon');
-
 
 icon.addEventListener('click',function(){
     body.classList.toggle('dark-mode');
@@ -56,25 +58,21 @@ icon.addEventListener('click',function(){
       sun.style.display = 'block';
       moon.style.display = 'none';
     }
-
     let isNightMode = body.classList.contains('dark-mode')
     localStorage.setItem('dark-mode', isNightMode);
 })
 
-
 function setInitialTheme(){
   const  saveMode = localStorage.getItem('dark-mode')
-
- 
 
   if(saveMode == "true"){
     body.classList.add('dark-mode')
     console.log('inite')
   }
 }
-
 setInitialTheme();
 
+// Preloader JavaScript Code 
 let loader= document.querySelector('#preloader')
 
 window.addEventListener('load', function(){

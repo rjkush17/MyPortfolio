@@ -7,7 +7,7 @@
 
 /* PreLoader CSS */
 #preloader {
-  background: #070707 url('./assest/preloader.gif') no-repeat center;
+  background: #101010 url('./assest/preloader.svg') no-repeat center;
   background-size: 10%;
   height: 100vh;
   width: 100%;
@@ -690,6 +690,11 @@ header {
 
 /* CSS For Tablet Width like Devices  */
 @media (max-width:950px) {
+
+  #preloader{
+    background-size: 25%;
+  }
+
   header {
     width: 100%;
     z-index: 99999;
@@ -893,6 +898,10 @@ header {
 
 /* CSS for Mobile Devices */
 @media (max-width: 580px) {
+
+  #preloader{
+    background-size: 45%;
+  }
 
   #button {
     padding: 10px 14px;
