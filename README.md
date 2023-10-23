@@ -62,7 +62,7 @@ These technologies and libraries were thoughtfully chosen to create a seamless a
 
 - **Preloader**: This is a nice way to keep users engaged while your site is loading.
 
--** Chatboat for direct contact**: This is a great way to make it easy for users to get in touch with you.
+- **Chatboat for direct contact**: This is a great way to make it easy for users to get in touch with you.
 
 - **Mail in form contact section**: This is a traditional way for users to contact you, and it's still a good option to have available.
 
