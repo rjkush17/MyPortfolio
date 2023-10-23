@@ -68,6 +68,7 @@ a {
 ::selection{
   background-color: var(--text-heading);
   color: var(--bg-color);
+  border-radius: 25px;
 }
 
 /* Button CSS */
@@ -86,7 +87,7 @@ a {
   -webkit-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
   transition: all ease 0.3s;
-  color: var(--bg-color)
+  color: white;
 }
 #button:active {
   scale: 90%;
@@ -135,6 +136,7 @@ header {
   position: fixed;
   background-color: var(--bg-color);
   z-index: 999;
+  box-shadow: 0 0 5px var(--text-normal);
 
   & nav {
     display: -webkit-box;
@@ -601,7 +603,7 @@ header {
         border: none;
         background-color: var(--gray-bg);
         height: 2.4rem;
-        width: 30rem;
+        width: 100%;
         font-weight: 500;
         font-size: 15px;
         border-radius: 6px;
@@ -849,7 +851,7 @@ header {
   }
 
   .contact {
-    display: block;
+    grid-template-columns: 100%;
 
     .contact-heading {
       padding: 0 0 0 0;
@@ -858,6 +860,11 @@ header {
       .mail-box {
         float: inline-end;
       }
+    }
+
+    .contact-heading{
+      display: flex;
+      flex-direction: column;
     }
 
     .contact-form {
@@ -871,6 +878,10 @@ header {
         & h2 {
           margin-bottom: 0px;
           margin-top: .5rem;
+        }
+
+        & label{
+          width: 90%;
         }
       }
     }
@@ -905,16 +916,9 @@ header {
 
   #button {
     padding: 10px 14px;
-    background: rgb(13, 0, 36);
-    background: -webkit-gradient(linear, left top, right top, from(rgba(13, 0, 36, 1)), color-stop(0%, rgba(106, 51, 213, 1)), color-stop(41%, rgba(111, 51, 215, 1)), color-stop(99%, rgba(162, 81, 223, 1)), to(rgba(203, 168, 223, 1)));
-    background: -o-linear-gradient(left, rgba(13, 0, 36, 1) 0%, rgba(106, 51, 213, 1) 0%, rgba(111, 51, 215, 1) 41%, rgba(162, 81, 223, 1) 99%, rgba(203, 168, 223, 1) 100%);
-    background: linear-gradient(90deg, rgba(13, 0, 36, 1) 0%, rgba(106, 51, 213, 1) 0%, rgba(111, 51, 215, 1) 41%, rgba(162, 81, 223, 1) 99%, rgba(203, 168, 223, 1) 100%);
-    color: var(--bg-color);
     font-size: 1.2rem;
     font-weight: 900;
     letter-spacing: .8px;
-    border: none;
-    outline: none;
     border-radius: 5px;
     -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
@@ -1003,7 +1007,7 @@ header {
 
   .projects {
     max-width: 94%;
-    margin: 3.5rem .4rem 1vh .4rem;
+    /* margin: 3.5rem .4rem 1vh .4rem; */
 
     .project-head {
 

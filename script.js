@@ -54,20 +54,28 @@ icon.addEventListener('click',function(){
     if (body.classList.contains('dark-mode')) {
       sun.style.display = 'none';
       moon.style.display = 'block';
+      console.log("Switch to Dark Mode theme")
     } else {
       sun.style.display = 'block';
       moon.style.display = 'none';
+      console.log("Switch to Light Mode theme")
     }
     let isNightMode = body.classList.contains('dark-mode')
     localStorage.setItem('dark-mode', isNightMode);
+
+    if(isNightMode){
+      console.log("dark mode preference saved to your local storage")
+    }else{
+      console.log("light mode preference saved to your local storage")
+    }  
 })
 
 function setInitialTheme(){
   const  saveMode = localStorage.getItem('dark-mode')
+  
 
   if(saveMode == "true"){
     body.classList.add('dark-mode')
-    console.log('inite')
   }
 }
 setInitialTheme();
