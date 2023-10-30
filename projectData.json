@@ -8,6 +8,13 @@
         "link": "https://muzieblog.netlify.app/"
       },
       {
+        "name": "Quiz Application",
+        "img": "quiz.jpg",
+        "description": "A Quiz a With lost of feature lost of different quiz categories, and proper result, and scorecard",
+        "code": "https://github.com/rjkush17/advance-quiz-web-app",
+        "link": "https://quiz-rishabh.vercel.app/"
+      },
+      {
         "name": "todo",
         "img": "todo.svg",
         "description": "his todo app allows users to create, organize, and track their tasks. It features a clean and intuitive interface,",
