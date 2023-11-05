@@ -1,55 +1,60 @@
 {
-    "projects": [
-      {
-        "name": "Blog Web App",
-        "img": "blogapp.svg",
-        "description": "A web blog app using tailwind css and react.js. a web app where you can see amny blogs,",
-        "code": "https://github.com/rjkush17/Blog-web-app",
-        "link": "https://muzieblog.netlify.app/"
-      },
-      {
-        "name": "Quiz Application",
-        "img": "quiz.jpg",
-        "description": "A Quiz a With lost of feature lost of different quiz categories, and proper result, and scorecard",
-        "code": "https://github.com/rjkush17/advance-quiz-web-app",
-        "link": "https://quiz-rishabh.vercel.app/"
-      },
-      {
-        "name": "todo",
-        "img": "todo.svg",
-        "description": "his todo app allows users to create, organize, and track their tasks. It features a clean and intuitive interface,",
-        "code": "https://github.com/rjkush17/Todo-React-App.git",
-        "link": "https://todoapprishabh.netlify.app/"
-      },
-      {
-        "name": "Form Validation",
-        "img": "form.svg",
-        "description": "A form Ragistration with complete validations function",
-        "code": "https://github.com/rjkush17/form-validation.git",
-        "link": "https://formvalidationrishabh.netlify.app/"
-      },
-      {
-        "name": "Password Genratos",
-        "img": "password.jpg",
-        "description": "Create random password with you requied lenght and configration",
-        "code": "https://github.com/rjkush17/pasdword-genrator",
-        "link": "https://passwordrishabh.netlify.app/"
-      },
-      {
-        "name": "Weathing-App",
-        "img": "weathering.svg",
-        "description": "i weathering app using open weather api ",
-        "code": "https://github.com/rjkush17/weather-app",
-        "link": "https://weatheringapprishabh.netlify.app/"
-      },
-      {
-        "name": "Contact Management",
-        "img": "contact.jpg",
-        "description": "A Small Project On Contact Managment Using React Redux Toolkit",
-        "code": "https://github.com/rjkush17/contact",
-        "link": "https://contact-rishabh.vercel.app/"
-      }
-      
-    ]
-  }
-  
+  "projects": [
+    {
+      "name": "Quiz Application",
+      "img": "quiz.jpg",
+      "description": "A Quiz a With lost of feature lost of different quiz categories, and proper result, and scorecard",
+      "code": "https://github.com/rjkush17/advance-quiz-web-app",
+      "link": "https://quiz-rishabh.vercel.app/"
+    },
+    {
+      "name": "Bussiness Website",
+      "img": "revertex.jpg",
+      "description": "A Bussiness WEbsite where you can see bussiness portfolio,services,testimonial and other",
+      "code": "https://github.com/rjkush17/Revertex-landing-page",
+      "link": "https://revertex-rishabh.netlify.app/"
+    },
+    {
+      "name": "Blog Web App",
+      "img": "blogapp.svg",
+      "description": "A web blog app using tailwind css and react.js. a web app where you can see amny blogs,",
+      "code": "https://github.com/rjkush17/Blog-web-app",
+      "link": "https://muzieblog.netlify.app/"
+    },
+    {
+      "name": "todo",
+      "img": "todo.svg",
+      "description": "his todo app allows users to create, organize, and track their tasks. It features a clean and intuitive interface,",
+      "code": "https://github.com/rjkush17/Todo-React-App.git",
+      "link": "https://todoapprishabh.netlify.app/"
+    },
+    {
+      "name": "Form Validation",
+      "img": "form.svg",
+      "description": "A form Ragistration with complete validations function",
+      "code": "https://github.com/rjkush17/form-validation.git",
+      "link": "https://formvalidationrishabh.netlify.app/"
+    },
+    {
+      "name": "Password Genratos",
+      "img": "password.jpg",
+      "description": "Create random password with you requied lenght and configration",
+      "code": "https://github.com/rjkush17/pasdword-genrator",
+      "link": "https://passwordrishabh.netlify.app/"
+    },
+    {
+      "name": "Weathing-App",
+      "img": "weathering.svg",
+      "description": "i weathering app using open weather api ",
+      "code": "https://github.com/rjkush17/weather-app",
+      "link": "https://weatheringapprishabh.netlify.app/"
+    },
+    {
+      "name": "Contact Management",
+      "img": "contact.jpg",
+      "description": "A Small Project On Contact Managment Using React Redux Toolkit",
+      "code": "https://github.com/rjkush17/contact",
+      "link": "https://contact-rishabh.vercel.app/"
+    }
+  ]
+}

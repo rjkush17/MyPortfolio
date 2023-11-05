@@ -73,6 +73,7 @@ a {
 
 /* Button CSS */
 #button {
+  font-family: nunito;
   padding: 15px 40px;
   background: rgb(13, 0, 36);
   background: var(--linear-bg);
