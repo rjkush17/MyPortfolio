@@ -28,7 +28,7 @@
  /* Dark Modes Varibles*/
 .dark-mode {
   --bg-color: rgb(42, 42, 48, 1);
-  --text-heading: #ff4533;
+  --text-heading: #f43b2a;
   --text-normal: #dfdbe5;
   --gray-bg: rgba(98, 97, 97, 0.2);
   --linear-bg: linear-gradient(90deg, rgba(255, 69, 51, 1) 10%, rgba(241, 64, 47, 1) 71%, rgba(205, 72, 23, 1) 99%);
