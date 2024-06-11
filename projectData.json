@@ -1,18 +1,18 @@
 {
   "projects": [
     {
+      "name": "lifeStyleMag - blogapp",
+      "img": "blog.jpg",
+      "description": "A Fullstack Next.js Blog Application",
+      "code": "https://github.com/rjkush17/blogapp-nextjs",
+      "link": "https://lifestylemag.vercel.app/"
+    },
+    {
       "name": "Stylish - Shoes Store",
       "img": "shoes.jpg",
       "description": "A mern appplication of online shoes store",
       "code": "https://github.com/rjkush17/shoesStore-public",
       "link": "https://stylishshoesstore.netlify.app/"
-    },
-    {
-      "name": "Authentication Web",
-      "img": "authentication.jpg",
-      "description": "A work out list web with full Authentication system in mern stack",
-      "code": "https://github.com/rjkush17/advanceAuth",
-      "link": "https://myworkout-mern.netlify.app/"
     },
     {
       "name": "Quiz Application",
@@ -27,13 +27,6 @@
       "description": "A Bussiness WEbsite where you can see bussiness portfolio,services,testimonial and other",
       "code": "https://github.com/rjkush17/Revertex-landing-page",
       "link": "https://revertex-rishabh.netlify.app/"
-    },
-    {
-      "name": "Blog Web App",
-      "img": "blogapp.svg",
-      "description": "A web blog app using tailwind css and react.js. a web app where you can see amny blogs,",
-      "code": "https://github.com/rjkush17/Blog-web-app",
-      "link": "https://muzieblog.netlify.app/"
     }
   ]
 }
