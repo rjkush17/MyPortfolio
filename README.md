@@ -107,4 +107,4 @@ These metrics offer insights into the performance of the project during the medi
 
 **Total Blocking Time:** This quantifies how much time the main thread was blocked, which can affect interactivity.
 
-**Page Weight**: This is the total size of all resources (HTML, CSS, JavaScript, images, etc.) loaded by the page.
+**Page Weight**: This is the total size of all resources (HTML, CSS, JavaScript, images, etc.) load by the page.
