@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "name": "lifeStyleMag - blogapp",
+      "img": "blog.jpg",
+      "description": "A Fullstack Next.js Blog Application",
+      "code": "https://github.com/rjkush17/blogapp-nextjs",
+      "link": "https://lifestylemag.vercel.app/"
+    },
+    {
+      "name": "Stylish - Shoes Store",
+      "img": "shoes.jpg",
+      "description": "A mern appplication of online shoes store",
+      "code": "https://github.com/rjkush17/shoesStore-public",
+      "link": "https://stylishshoesstore.netlify.app/"
+    },
+    {
+      "name": "Quiz Application",
+      "img": "quiz.jpg",
+      "description": "A Quiz a With lost of feature lost of different quiz categories, and proper result, and scorecard",
+      "code": "https://github.com/rjkush17/advance-quiz-web-app",
+      "link": "https://quiz-rishabh.vercel.app/"
+    },
+    {
+      "name": "Bussiness Website",
+      "img": "revertex.jpg",
+      "description": "A Bussiness WEbsite where you can see bussiness portfolio,services,testimonial and other",
+      "code": "https://github.com/rjkush17/Revertex-landing-page",
+      "link": "https://revertex-rishabh.netlify.app/"
+    }
+  ]
+}
