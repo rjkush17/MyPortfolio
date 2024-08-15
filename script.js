@@ -34,9 +34,9 @@ fetch(url)
         const isMobile = window.innerWidth < 600;
   
         const projectContent = `
-          <div class="project-div">
+          <div class="project-div" data-aos="fade-up" data-aos-duration="1100" data-aos-easing="ease-in-sine">
             ${isEven && !isMobile ? `
-              <a href="${elem.link}" target="_blank">
+              <a href="${elem.link}" target="_blank" >
                 <div class="project-text">
                   <h1>${elem.name}</h1>
                   <i class="fa-solid fa-arrow-right-long"></i>
