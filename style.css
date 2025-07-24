@@ -357,7 +357,7 @@ header nav ul li a:hover::after {
 
 /* About Section CSS */
 .about {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 8rem auto;
   padding: 0 2rem;
 }
@@ -449,7 +449,7 @@ header nav ul li a:hover::after {
 /* Contact Section CSS */
 .contact {
   display: flex;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 8rem auto;
   padding: 0 2rem;
   gap: 3rem;
@@ -525,7 +525,7 @@ header nav ul li a:hover::after {
 }
 
 .footer .upper-box {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
