@@ -1,165 +1,115 @@
-/* Project Section CSS */
 .projects {
-  max-width: 1400px;
-  margin: 8rem auto;
-  padding: 0 2rem;
+  width: 100vw;
+  margin: 10vh auto 4vh auto;
 }
 
 .project-head {
   text-align: center;
-  margin-bottom: 4rem;
 }
 
 .project-head h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 800;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  padding: 15px;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 .project-head h1 span {
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-heading);
 }
 
+.project-head p {
+  font-size: 20px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+/* Project Layout */
 .project-div {
   display: flex;
-  margin-bottom: 4rem;
-  background: var(--card-bg);
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: var(--shadow-light);
-  border: 1px solid var(--border-color);
-  transition: all 0.3s ease;
-  min-height: 400px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.project-div:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-large);
-}
-
+/* Image Area */
 .project-img {
-  flex: 1;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-  position: relative;
 }
 
 .project-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
+  height: auto; /* Preserve 1920x1080 aspect ratio */
+  max-width: 100%;
+  display: block;
+  transition: transform 1.2s ease-in-out;
 }
 
-.project-div:hover .project-image {
-  transform: scale(1.05);
+.project-image:hover {
+  transform: scale(1.1);
 }
 
+/* Text Area */
 .project-div a {
-  flex: 1;
-  text-decoration: none;
-  color: inherit;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
 
 .project-text {
-  height: 100%;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 3rem 2rem;
-  position: relative;
-  background: linear-gradient(135deg, var(--card-bg) 0%, var(--gray-bg) 100%);
-}
-
-.project-text::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--accent-gradient);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.project-div:hover .project-text::before {
-  opacity: 0.05;
-}
-
-.project-text > * {
-  position: relative;
-  z-index: 1;
+  gap: 1rem;
 }
 
 .project-text h1 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 700;
+  font-size: 2rem;
   color: var(--text-heading);
   text-transform: uppercase;
-  margin-bottom: 1rem;
-  letter-spacing: 0.05em;
-  line-height: 1.2;
 }
 
 .project-text i {
-  font-size: 2rem;
-  color: var(--text-heading);
-  transition: transform 0.3s ease;
+  font-size: 1.5rem;
 }
 
-.project-div:hover .project-text i {
-  transform: translateX(8px);
-}
-
-/* Responsive Design for Projects */
+/* Responsive for Tablets */
 @media (max-width: 900px) {
-  .projects {
-    margin: 4rem auto;
+  .project-div {
+    flex-direction: column;
   }
 
-  .project-div {
-    min-height: 350px;
+  .project-img,
+  .project-div a {
+    width: 100%;
   }
 
   .project-text h1 {
-    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    font-size: 1.4rem;
   }
 
-  .project-text i {
-    font-size: 1.5rem;
+  .project-div a {
+    padding: 1.5rem 1rem;
   }
 }
 
+/* Responsive for Mobile */
 @media (max-width: 600px) {
-  .projects {
-    padding: 0 1rem;
+  .project-head h1 {
+    font-size: 1.8rem;
   }
 
-  .project-div {
-    flex-direction: column;
-    min-height: auto;
-  }
-
-  .project-img {
-    height: 250px;
-  }
-
-  .project-text {
-    padding: 2rem 1rem;
+  .project-head p {
+    max-width: 90%;
+    font-size: 1rem;
   }
 
   .project-text h1 {
     font-size: 1.2rem;
   }
-
-  .project-text i {
-    font-size: 1.3rem;
-  }
 }
+
