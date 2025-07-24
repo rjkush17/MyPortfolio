@@ -1,0 +1,30 @@
+{
+  "name": "rishabh-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website of Rishabh Kushwah - Full-Stack Web Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000",
+    "build": "echo 'Static site - no build needed'",
+    "dev": "live-server --port=3000"
+  },
+  "keywords": [
+    "portfolio",
+    "web-developer",
+    "frontend",
+    "fullstack",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Rishabh Kushwah",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/your-repo-name.git"
+  },
+  "homepage": "https://yourusername.github.io/your-repo-name"
+}

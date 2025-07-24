@@ -1,9 +1,52 @@
 
 # MY Portfolio
 
+> A modern, responsive portfolio website showcasing my work as a Full-Stack Web Developer
 
 A description for your portfolio project should be clear, concise, and informative. It should highlight the project's goals, challenges, and outcomes. It should also showcase your skills and abilities.
 
+## 🌟 Features
+
+- **Responsive Design**: Optimized for all devices from mobile to desktop
+- **Dark/Light Mode**: Toggle between themes with local storage persistence
+- **Smooth Animations**: AOS animations and custom CSS transitions
+- **Interactive Elements**: Hover effects and micro-interactions
+- **Contact Form**: Functional contact form using Formspree
+- **Modern UI**: Clean, professional design with gradient accents
+- **Performance Optimized**: Fast loading with optimized assets
+
+## 🚀 Quick Start
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm start
+```
+
+4. Open your browser and visit `http://localhost:3000`
+
+## 📁 Project Structure
+
+```
+├── index.html          # Main HTML file
+├── style.css           # Main stylesheet
+├── projectStyle.css    # Project section styles
+├── script.js           # JavaScript functionality
+├── projectData.json    # Project data
+├── img/               # Images and icons
+├── assest/            # Assets (resume, preloader)
+└── Fonts/             # Custom fonts
+```
 
 ## Demo
 
