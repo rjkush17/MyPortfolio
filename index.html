@@ -1,345 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Title Tag -->
-    <title>&lt;RISHABH/&gt; | Portfolio</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS StyleSheet -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="projectStyle.css" />
+  <!-- Title Tag -->
+  <title>RISHABH | Full Stack Developer</title>
 
-    <!-- ICON Link Tag -->
-    <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
-    <!-- AOS animation Link -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- CSS StyleSheet -->
+  <link rel="stylesheet" href="style.css" />
 
+  <!-- ICON Link Tag -->
+  <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
 
-    <!-- Font Awasome Script Link -->
-    <script
-      src="https://kit.fontawesome.com/1d27b3341b.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <!-- AOS animation Link -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <body>
-    <!-- PreLoader Div -->
-    <div id="preloader"></div>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/1d27b3341b.js" crossorigin="anonymous"></script>
+</head>
 
-    <!-- NavBar HTML  -->
-      <header>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="second-div">
-          <a
-            href="./assest/Resume.pdf"
-            download="Rishabh'sResume.pdf"
-            class="resume"
-          >
-            Resume<i class="fa-solid fa-download"></i>
-          </a>
-          <div class="icon">
-            <i id="sun" class="fa-solid fa-sun"></i
-            ><i id="moon" class="fa-solid fa-moon"></i>
-          </div>
-          <div class="hamburgur icon">
-            <i id="bars" class="fa-solid fa-bars"></i>
-            <i id="cross" class="fa-regular fa-rectangle-xmark"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
+<body>
+  <!-- PreLoader -->
+  <div id="preloader"></div>
 
-    <!-- Home Section HTML -->
-     <section id="home" class="hero">
-      <h1 data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">Heyy, I'm <span>Rishabh Kushwah</span></h1>
-      <h2 data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">Full-Stack Web Developer</h2>
-      <div data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine" class="links-icon">
-        <span
-          ><a href="https://github.com/rjkush17" target="_blank"
-            ><img src="./img/github1.svg" height="50" alt=""></a
-          ></span
-        >
-        <span
-          ><a href="https://t.me/+LVYQWdbZBpc3MDZl" target="_blank"
-            ><img src="./img/telegram.svg" height="50" alt=""></a
-          ></span
-        >
-        <span
-          ><a href="https://www.instagram.com/rjkush17/" target="_blank"
-            ><img src="./img/instagram.svg" height="50" alt=""></a
-          ></span
-        >
-        <span
-          ><a href="https://www.linkedin.com/in/rjkush17/" target="_blank"
-            ><img src="./img/linkedin.svg" height="50" alt=""></a
-          ></span
-        >
+  <!-- NavBar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <!-- You could add a logo image or text here if desired, otherwise just links -->
+        <a href="#" style="font-weight: 800; font-size: 1.5rem; color: var(--primary);">RISHABH.</a>
       </div>
-      <div data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine"><a  href="#contact" id="button">Hire Me </a></div>
-    </section> 
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-    <!-- About Section HTMl -->
-   <section id="about" class="about">
-      <div class="about-head">
-        <h1 data-aos="fade-up" data-aos-duration="1100" data-aos-easing="ease-in-sine">Let's Introduce <span>about</span> myself</h1>
-      </div>
-      <div class="about-body" >
-        <div class="card know-me">
-          <h4 class="know-card-heading" data-aos="zoom-in" data-aos-duration="1500">Hello there, 👋</h4>
-          <div class="know-card-contain" data-aos="zoom-in" data-aos-duration="1500">
-            <p>
-              I'm Rishabh Kushwah, a dedicated Full-Stack Web Development student based in Indore, India. My journey is all about evolving into a skilled developer, and I thrive on taking up new challenges and seizing learning opportunities.
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+          <i id="sun" class="fa-solid fa-sun"></i>
+          <i id="moon" class="fa-solid fa-moon" style="display: none;"></i>
+        </button>
 
-            </p>
-            <p>
-              In addition to my development work, I also enjoy sharing my
-              knowledge with the web development community. Feel free to connect
-              with me or follow me to stay updated with my insights.
-            </p>
-            <p>
-              I am actively seeking job <strong>opportunities</strong> where I
-              can contribute my skills, continue to learn & grow professionally.
-              If you have a promising opportunity that aligns with my skills and
-              experience, please don't hesitate to <strong> Contact me</strong>.
-            </p>
-          </div>
-        </div>
-        <div class="card skills">
-          <h4 class="card-heading" data-aos="zoom-in" data-aos-duration="1500">My Skills</h4>
-          <div class="card-contain">
-            <span data-aos="zoom-in" data-aos-duration="1500"
-              ><img
-                src="./img/Skills icon/javascript-js.svg"
-                alt=""
-                height="24px"
-              />JavaScript</span
-            >
-            <span data-aos="zoom-in" data-aos-duration="1500"
-              ><img
-                src="./img/Skills icon/html.svg"
-                alt=""
-                height="24px"
-              />HTML</span
-            >
-            <span data-aos="zoom-in" data-aos-duration="1500"
-              ><img
-                src="./img/Skills icon/css.svg"
-                alt=""
-                height="24px"
-              />CSS</span
-            >
+        <a href="./assest/Resume.pdf" download="Rishabh'sResume.pdf" class="btn"
+          style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+          Resume <i class="fa-solid fa-download"></i>
+        </a>
 
-            <span data-aos="zoom-in" data-aos-duration="1500"
-              ><img
-                src="./img/Skills icon/react.svg"
-                alt=""
-                height="24px"
-              />React.JS</span
-            >
-
-            <span data-aos="zoom-in" data-aos-duration="1500"
-              ><img
-                src="./img/Skills icon/nextjs.svg"
-                alt=""
-                height="24px"
-              />Next.JS</span
-            >
-
-            <span data-aos="zoom-in" data-aos-duration="1500"
-              ><img
-                src="./img/Skills icon/nodejs.svg"
-                alt=""
-                height="24px"
-              />node.JS</span
-            >
-            <span data-aos="zoom-in" data-aos-duration="1500"
-              ><img
-                src="./img/Skills icon/mongodb.svg"
-                alt=""
-                height="24px"
-              />Mongo DB</span
-            >
-
-            <span data-aos="zoom-in" data-aos-duration="1500"
-              ><img
-                src="./img/Skills icon/express.svg"
-                alt=""
-                height="24px"
-              />express.JS</span
-            >
-            <span data-aos="zoom-in" data-aos-duration="1500"
-              ><img
-                src="./img/Skills icon/bootstrap.svg"
-                alt=""
-                height="24px"
-              />Bootstrap</span
-            >
-
-            <span data-aos="zoom-in" data-aos-duration="1500"
-              ><img
-                src="./img/Skills icon/tailwind-css.svg"
-                alt=""
-                height="24px"
-              />Tailwind CSS</span
-            >
-            <span data-aos="zoom-in" data-aos-duration="1500"
-              ><img
-                src="./img/Skills icon/react-router.svg"
-                alt=""
-                height="24px"
-              />React Router</span
-            >
-            <span data-aos="zoom-in" data-aos-duration="1500"
-              ><img
-                src="./img/Skills icon/redux-original.svg"
-                alt=""
-                height="24px"
-              />Redux Toolkit</span
-            >
-
-            <span data-aos="zoom-in" data-aos-duration="1500"
-              ><img
-                src="./img/Skills icon/responsive.svg"
-                alt=""
-                height="24px"
-              />Responsive</span
-            >
-            <span data-aos="zoom-in" data-aos-duration="1500"
-              ><img
-                src="./img/Skills icon/git.svg"
-                alt=""
-                height="24px"
-              />Git</span
-            >
-            <span data-aos="zoom-in" data-aos-duration="1500"
-              ><img
-                src="./img/Skills icon/github.svg"
-                alt=""
-                height="24px"
-              />Github</span
-            >
-          </div>
+        <div class="hamburgur">
+          <i id="bars" class="fa-solid fa-bars"></i>
+          <i id="cross" class="fa-solid fa-xmark" style="display: none;"></i>
         </div>
       </div>
-    </section>
+    </nav>
+  </header>
 
-    <!-- Project Section HTML -->
-    <section id="projects" class="projects">
-      <div class="project-head">
-        <h1 data-aos="fade-up" data-aos-duration="1100" data-aos-easing="ease-in-sine">My <span>Portfolio</span></h1>
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="hero-tag" data-aos="fade-down" data-aos-duration="1000">Running on Caffeine & Code ☕</div>
+    <h1 data-aos="fade-up" data-aos-duration="1200">
+      Hi, I'm <span class="gradient-text">Rishabh</span><br>
+      Full-Stack Developer
+    </h1>
+    <p class="subtitle" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
+      I build accessible, pixel-perfect, and performant web experiences. Dedicated to creating software that improves
+      the lives of those around me.
+    </p>
+
+    <div class="social-links" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+      <a href="https://github.com/rjkush17" target="_blank" class="social-icon" aria-label="GitHub">
+        <i class="fa-brands fa-github fa-lg"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/rjkush17/" target="_blank" class="social-icon" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in fa-lg"></i>
+      </a>
+      <a href="https://t.me/+LVYQWdbZBpc3MDZl" target="_blank" class="social-icon" aria-label="Telegram">
+        <i class="fa-brands fa-telegram fa-lg"></i>
+      </a>
+      <a href="https://www.instagram.com/rjkush17/" target="_blank" class="social-icon" aria-label="Instagram">
+        <i class="fa-brands fa-instagram fa-lg"></i>
+      </a>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
+      <a href="#contact" class="btn">Start a Project <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-header" data-aos="fade-up">
+      <h2>About <span class="gradient-text">Me</span></h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card" data-aos="fade-right">
+        <h3>Hello, there! 👋</h3>
+        <p style="margin-top: 1rem; color: var(--text-muted);">
+          I'm Rishabh Kushwah, a dedicated Full-Stack Web Developer based in Indore, India. My journey is all about
+          evolving into a skilled developer, and I thrive on taking up new challenges and seizing learning
+          opportunities.
+        </p>
+        <p style="margin-top: 1rem; color: var(--text-muted);">
+          I am actively seeking job opportunities where I can contribute my skills. If you have a promising opportunity
+          that aligns with my skills/experience, don't hesitate to contact me!
+        </p>
       </div>
-      <div class="project-body"></div>
-    </section>
 
-    <!-- Contact Section HTML -->
-     <div id="contact" class="contact">
-      <div class="contact-heading" data-aos="zoom-in-up">
-        <h1>Let's Chat You Can Send Me a Message Here</h1>
-
-      </div>
-      <div class="contact-form" data-aos="zoom-in-up">
-        <form action="https://formspree.io/f/xgejndqa" method="POST">
-          <label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-              autocomplete="off"
-            />
-          </label>
-          <label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Enter Full Name"
-              required
-              autocomplete="off"
-            />
-          </label>
-          <label>
-            <input
-              type="subject"
-              name="subject"
-              placeholder="Subject"
-              required
-              autocomplete="off"
-            />
-          </label>
-          <label>
-            <textarea
-             
-              name="message"
-              placeholder="Type me your Message Here....."
-              required
-              autocomplete="off"
-            ></textarea>
-          </label>
-         <div>
-          <button id="button" type="submit">Send Message</button>
-         </div>
-        </form>
+      <div class="about-card" data-aos="fade-left">
+        <h3 style="margin-bottom: 1.5rem;">My Skills</h3>
+        <div class="skills-wrapper">
+          <!-- Skills content simplified for cleaner look, images are optional now but kept for consistency if desired, or just text -->
+          <div class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</div>
+          <div class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</div>
+          <div class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+          <div class="skill-tag"><i class="fa-brands fa-react"></i> React</div>
+          <div class="skill-tag">Next.js</div>
+          <div class="skill-tag"><i class="fa-brands fa-node-js"></i> Node.js</div>
+          <div class="skill-tag">MongoDB</div>
+          <div class="skill-tag">Express</div>
+          <div class="skill-tag"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
+          <div class="skill-tag">Tailwind</div>
+          <div class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</div>
+        </div>
       </div>
     </div>
-    <!-- Footer Section HTML -->
-    <footer class="footer">
-      <div class="upper-box">
-        <div class="footer-name footer-flex">
-          <h2><strong>RISHABH KUSHWAH</strong></h2>
-          <p>
-            I am a student specializing in front-end web development, actively
-            engaged in the process of acquiring knowledge and skills. My goal is
-            to become a highly skilled web developer, leading to a successful
-            career.
-          </p>
-        </div>
-        <div class="footer-links footer-flex">
-          <h2>Social Media</h2>
-          <div class="links-icon">
-            <span
-              ><a href="https://github.com/rjkush17" target="_blank"
-                ><img src="./img/github1.svg"" height=" 25" alt=""></a
-              ></span
-            >
-            <span
-              ><a href="https://t.me/+LVYQWdbZBpc3MDZl" target="_blank"
-                ><img src="./img/telegram.svg"" height=" 25" alt=""></a
-              ></span
-            >
-            <span
-              ><a href="https://www.instagram.com/rjkush17/" target="_blank"
-                ><img src="./img/instagram.svg"" height=" 25" alt=""></a
-              ></span
-            >
-            <span
-              ><a href="https://www.linkedin.com/in/rjkush17/" target="_blank"
-                ><img src="./img/linkedin.svg"" height=" 25" alt=""></a
-              ></span
-            >
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-header" data-aos="fade-up">
+      <h2>My <span class="gradient-text">Portfolio</span></h2>
+      <p style="color: var(--text-muted);">A small selection of my recent work</p>
+    </div>
+
+    <div class="project-body projects-grid">
+      <!-- Projects will be injected here by script.js -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact-container" data-aos="zoom-in-up">
+      <div class="contact-info">
+        <h2>Let's work <span class="gradient-text">together.</span></h2>
+        <p>
+          Have a project in mind? I'd love to hear about it. Send me a message and I'll get back to you as soon as
+          possible.
+        </p>
+
+        <div style="margin-top: 2rem;">
+          <div style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
+            <i class="fa-solid fa-envelope" style="color: var(--primary);"></i>
+            <span>rjkush17@gmail.com</span> <!-- Placeholder email based on context -->
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <i class="fa-solid fa-location-dot" style="color: var(--primary);"></i>
+            <span>Indore, India</span>
           </div>
         </div>
       </div>
-      <div class="thanks">
-        © 2023 RISHABH KUSHWAH | Handcrafted with ❤️ | Made by RISHABH KUSHWAH
+
+      <form action="https://formspree.io/f/xgejndqa" method="POST" class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" class="form-input" placeholder="Your Name" required autocomplete="off">
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" class="form-input" placeholder="Your Email" required autocomplete="off">
+        </div>
+        <div class="form-group">
+          <input type="text" name="subject" class="form-input" placeholder="Subject" required autocomplete="off">
+        </div>
+        <div class="form-group">
+          <textarea name="message" class="form-input" placeholder="Tell me about your project..." required
+            autocomplete="off"></textarea>
+        </div>
+        <button type="submit" class="btn" style="width: 100%; justify-content: center;">Send Message <i
+            class="fa-regular fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div>
+        <h3>RISHABH KUSHWAH</h3>
+        <p style="color: var(--text-muted); max-width: 300px; margin-top: 0.5rem;">
+          Building digital products, brands, and experiences.
+        </p>
       </div>
-    </footer>
 
-    <!-- MY Script Link -->
-    <script src="script.js"></script>
+      <div class="social-links" style="margin-bottom: 0;">
+        <a href="https://github.com/rjkush17" target="_blank" class="social-icon"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/rjkush17/" target="_blank" class="social-icon"><i
+            class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/rjkush17/" target="_blank" class="social-icon"><i
+            class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
 
-    <!-- AOS animation script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <div class="copyright">
+      © 2023 Rishabh Kushwah. All rights reserved. Handcrafted with <span style="color: red;">❤</span>.
+    </div>
+  </footer>
 
-  </body>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+</body>
+
 </html>
