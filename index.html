@@ -1,220 +1,278 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Title Tag -->
-  <title>RISHABH | Full Stack Developer</title>
+    <!-- Title Tag -->
+    <title>RISHABH | Full Stack Developer</title>
 
-  <!-- CSS StyleSheet -->
-  <link rel="stylesheet" href="style.css" />
+    <!-- CSS StyleSheet -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- ICON Link Tag -->
-  <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
+    <!-- ICON Link Tag -->
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
 
-  <!-- AOS animation Link -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS animation Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/1d27b3341b.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1d27b3341b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!-- PreLoader -->
-  <div id="preloader"></div>
+    <!-- PreLoader -->
+    <div id="preloader"></div>
 
-  <!-- NavBar -->
-  <header>
-    <nav>
-      <div class="logo">
-        <!-- You could add a logo image or text here if desired, otherwise just links -->
-        <a href="#" style="font-weight: 800; font-size: 1.5rem; color: var(--primary);">RISHABH.</a>
-      </div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <!-- NavBar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- You could add a logo image or text here if desired, otherwise just links -->
+                <a href="#" style="font-weight: 800; font-size: 1.5rem; color: var(--primary)">RISHABH.</a>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-      <div class="nav-actions">
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
-          <i id="sun" class="fa-solid fa-sun"></i>
-          <i id="moon" class="fa-solid fa-moon" style="display: none;"></i>
-        </button>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i id="sun" class="fa-solid fa-sun"></i>
+                    <i id="moon" class="fa-solid fa-moon" style="display: none"></i>
+                </button>
 
-        <a href="./assest/Resume.pdf" download="Rishabh'sResume.pdf" class="btn"
-          style="padding: 0.5rem 1rem; font-size: 0.9rem;">
-          Resume <i class="fa-solid fa-download"></i>
-        </a>
+                <a href="./assest/Resume.pdf" download="Rishabh'sResume.pdf" class="btn"
+                    style="padding: 0.5rem 1rem; font-size: 0.9rem">
+                    Resume <i class="fa-solid fa-download"></i>
+                </a>
 
-        <div class="hamburgur">
-          <i id="bars" class="fa-solid fa-bars"></i>
-          <i id="cross" class="fa-solid fa-xmark" style="display: none;"></i>
+                <div class="hamburgur">
+                    <i id="bars" class="fa-solid fa-bars"></i>
+                    <i id="cross" class="fa-solid fa-xmark" style="display: none"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-tag" data-aos="fade-down" data-aos-duration="1000">
+            Running on Caffeine & Code ☕
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Home Section -->
-  <section id="home" class="hero">
-    <div class="hero-tag" data-aos="fade-down" data-aos-duration="1000">Running on Caffeine & Code ☕</div>
-    <h1 data-aos="fade-up" data-aos-duration="1200">
-      Hi, I'm <span class="gradient-text">Rishabh</span><br>
-      Full-Stack Developer
-    </h1>
-    <p class="subtitle" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
-      I build accessible, pixel-perfect, and performant web experiences. Dedicated to creating software that improves
-      the lives of those around me.
-    </p>
-
-    <div class="social-links" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
-      <a href="https://github.com/rjkush17" target="_blank" class="social-icon" aria-label="GitHub">
-        <i class="fa-brands fa-github fa-lg"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/rjkush17/" target="_blank" class="social-icon" aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin-in fa-lg"></i>
-      </a>
-      <a href="https://t.me/+LVYQWdbZBpc3MDZl" target="_blank" class="social-icon" aria-label="Telegram">
-        <i class="fa-brands fa-telegram fa-lg"></i>
-      </a>
-      <a href="https://www.instagram.com/rjkush17/" target="_blank" class="social-icon" aria-label="Instagram">
-        <i class="fa-brands fa-instagram fa-lg"></i>
-      </a>
-    </div>
-
-    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
-      <a href="#contact" class="btn">Start a Project <i class="fa-solid fa-arrow-right"></i></a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="section-header" data-aos="fade-up">
-      <h2>About <span class="gradient-text">Me</span></h2>
-    </div>
-
-    <div class="about-grid">
-      <div class="about-card" data-aos="fade-right">
-        <h3>Hello, there! 👋</h3>
-        <p style="margin-top: 1rem; color: var(--text-muted);">
-          I'm Rishabh Kushwah, a dedicated Full-Stack Web Developer based in Indore, India. My journey is all about
-          evolving into a skilled developer, and I thrive on taking up new challenges and seizing learning
-          opportunities.
-        </p>
-        <p style="margin-top: 1rem; color: var(--text-muted);">
-          I am actively seeking job opportunities where I can contribute my skills. If you have a promising opportunity
-          that aligns with my skills/experience, don't hesitate to contact me!
-        </p>
-      </div>
-
-      <div class="about-card" data-aos="fade-left">
-        <h3 style="margin-bottom: 1.5rem;">My Skills</h3>
-        <div class="skills-wrapper">
-          <!-- Skills content simplified for cleaner look, images are optional now but kept for consistency if desired, or just text -->
-          <div class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</div>
-          <div class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</div>
-          <div class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
-          <div class="skill-tag"><i class="fa-brands fa-react"></i> React</div>
-          <div class="skill-tag">Next.js</div>
-          <div class="skill-tag"><i class="fa-brands fa-node-js"></i> Node.js</div>
-          <div class="skill-tag">MongoDB</div>
-          <div class="skill-tag">Express</div>
-          <div class="skill-tag"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
-          <div class="skill-tag">Tailwind</div>
-          <div class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="section-header" data-aos="fade-up">
-      <h2>My <span class="gradient-text">Portfolio</span></h2>
-      <p style="color: var(--text-muted);">A small selection of my recent work</p>
-    </div>
-
-    <div class="project-body projects-grid">
-      <!-- Projects will be injected here by script.js -->
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact-container" data-aos="zoom-in-up">
-      <div class="contact-info">
-        <h2>Let's work <span class="gradient-text">together.</span></h2>
-        <p>
-          Have a project in mind? I'd love to hear about it. Send me a message and I'll get back to you as soon as
-          possible.
+        <h1 data-aos="fade-up" data-aos-duration="1200">
+            Hi, I'm <span class="gradient-text">Rishabh</span><br />
+            Full-Stack Developer
+        </h1>
+        <p class="subtitle" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
+            I build accessible, pixel-perfect, and performant web experiences.
+            Dedicated to creating software that improves the lives of those around
+            me.
         </p>
 
-        <div style="margin-top: 2rem;">
-          <div style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
-            <i class="fa-solid fa-envelope" style="color: var(--primary);"></i>
-            <span>rjkush17@gmail.com</span> <!-- Placeholder email based on context -->
-          </div>
-          <div style="display: flex; align-items: center; gap: 1rem;">
-            <i class="fa-solid fa-location-dot" style="color: var(--primary);"></i>
-            <span>Indore, India</span>
-          </div>
+        <div class="social-links" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+            <a href="https://github.com/rjkush17" target="_blank" class="social-icon" aria-label="GitHub">
+                <i class="fa-brands fa-github fa-lg"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rjkush17/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in fa-lg"></i>
+            </a>
+            <a href="https://t.me/+LVYQWdbZBpc3MDZl" target="_blank" class="social-icon" aria-label="Telegram">
+                <i class="fa-brands fa-telegram fa-lg"></i>
+            </a>
+            <a href="https://www.instagram.com/rjkush17/" target="_blank" class="social-icon" aria-label="Instagram">
+                <i class="fa-brands fa-instagram fa-lg"></i>
+            </a>
         </div>
-      </div>
 
-      <form action="https://formspree.io/f/xgejndqa" method="POST" class="contact-form">
-        <div class="form-group">
-          <input type="text" name="name" class="form-input" placeholder="Your Name" required autocomplete="off">
+        <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
+            <a href="#contact" class="btn">Start a Project <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="form-group">
-          <input type="email" name="email" class="form-input" placeholder="Your Email" required autocomplete="off">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-header" data-aos="fade-up">
+            <h2>About <span class="gradient-text">Me</span></h2>
         </div>
-        <div class="form-group">
-          <input type="text" name="subject" class="form-input" placeholder="Subject" required autocomplete="off">
+
+        <div class="about-grid">
+            <div class="about-card" data-aos="fade-right">
+                <h3>Hello, there! 👋</h3>
+                <p style="margin-top: 1rem; color: var(--text-muted)">
+                    I'm Rishabh Kushwah, a dedicated Full-Stack Web Developer based in
+                    Indore, India. My journey is all about evolving into a skilled
+                    developer, and I thrive on taking up new challenges and seizing
+                    learning opportunities.
+                </p>
+                <p style="margin-top: 1rem; color: var(--text-muted)">
+                    I am actively seeking job opportunities where I can contribute my
+                    skills. If you have a promising opportunity that aligns with my
+                    skills/experience, don't hesitate to contact me!
+                </p>
+            </div>
+
+            <div class="about-card" data-aos="fade-left">
+                <h3 style="margin-bottom: 1.5rem">My Skills</h3>
+                <div class="skills-wrapper">
+                    <!-- Skills content simplified for cleaner look, images are optional now but kept for consistency if desired, or just text -->
+
+                    <div class="skill-tag">
+                        <img src="./img/Skill icon/javascript.svg" /> JavaScript
+                    </div>
+                    <div class="skill-tag">
+                        <img src="./img/Skill icon/typescript.svg" /> typescript
+                    </div>
+                    <div class="skill-tag">
+                        <img src="./img/Skill icon/rust.svg" /> Rust (Basic)
+                    </div>
+                    <div class="skill-tag">
+                        <img src="./img/Skill icon/react.svg" />
+                        React.js
+                    </div>
+                    <div class="skill-tag">
+                        <img src="./img/Skill icon/nextjs.svg" /> Next.js
+                    </div>
+                    <div class="skill-tag">
+                        <img src="./img/Skill icon/redux.svg" />Redux Toolkit
+                    </div>
+                    <div class="skill-tag">
+                        <img src="./img/Skill icon/html.svg" />HTML
+                    </div>
+                    <div class="skill-tag">
+                        <img src="./img/Skill icon/css.svg" />CSS
+                    </div>
+                    <div class="skill-tag">
+                        <img src="./img/Skill icon/tailwindcss.svg" />Tailwind CSS
+                    </div>
+                    <div class="skill-tag">
+                        <img src="./img/Skill icon/shadcn.svg" />Shadcn
+                    </div>
+                    <div class="skill-tag">
+                        <img src="./img/Skill icon/bootstrap.svg" /> BootStrap
+                    </div>
+                    <div class="skill-tag">
+                        <img src="./img/Skill icon/nodejs.svg" /> Node.js
+                    </div>
+                    <div class="skill-tag">
+                    <img src="./img/Skill icon/expressjs.svg" />Express.js
+                    </div>
+                    <div class="skill-tag">
+                        <img src="./img/Skill icon/mongodb.svg" />MongoDB
+                    </div>
+                    <div class="skill-tag">
+                        <img src="./img/Skill icon/linux.svg" />Linux
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-          <textarea name="message" class="form-input" placeholder="Tell me about your project..." required
-            autocomplete="off"></textarea>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header" data-aos="fade-up">
+            <h2>My <span class="gradient-text">Portfolio</span></h2>
+            <p style="color: var(--text-muted)">
+                A small selection of my recent work
+            </p>
         </div>
-        <button type="submit" class="btn" style="width: 100%; justify-content: center;">Send Message <i
-            class="fa-regular fa-paper-plane"></i></button>
-      </form>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div>
-        <h3>RISHABH KUSHWAH</h3>
-        <p style="color: var(--text-muted); max-width: 300px; margin-top: 0.5rem;">
-          Building digital products, brands, and experiences.
-        </p>
-      </div>
+        <div class="project-body projects-grid">
+            <!-- Projects will be injected here by script.js -->
+        </div>
+    </section>
 
-      <div class="social-links" style="margin-bottom: 0;">
-        <a href="https://github.com/rjkush17" target="_blank" class="social-icon"><i
-            class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/rjkush17/" target="_blank" class="social-icon"><i
-            class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/rjkush17/" target="_blank" class="social-icon"><i
-            class="fa-brands fa-instagram"></i></a>
-      </div>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container" data-aos="zoom-in-up">
+            <div class="contact-info">
+                <h2>Let's work <span class="gradient-text">together.</span></h2>
+                <p>
+                    Have a project in mind? I'd love to hear about it. Send me a message
+                    and I'll get back to you as soon as possible.
+                </p>
 
-    <div class="copyright">
-      © 2023 Rishabh Kushwah. All rights reserved. Handcrafted with <span style="color: red;">❤</span>.
-    </div>
-  </footer>
+                <div style="margin-top: 2rem">
+                    <div style="
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+              ">
+                        <i class="fa-solid fa-envelope" style="color: var(--primary)"></i>
+                        <span><a href="mailto:rishabhkushwahrj@gmail.com">rishabhkushwahrj@gmail.com</a></span>
+                        <!-- Placeholder email based on context -->
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem">
+                        <i class="fa-solid fa-location-dot" style="color: var(--primary)"></i>
+                        <span>Indore, India</span>
+                    </div>
+                </div>
+            </div>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="script.js"></script>
+            <form action="https://formspree.io/f/xgejndqa" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-input" placeholder="Your Name" required
+                        autocomplete="off" />
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-input" placeholder="Your Email" required
+                        autocomplete="off" />
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" class="form-input" placeholder="Subject" required
+                        autocomplete="off" />
+                </div>
+                <div class="form-group">
+                    <textarea name="message" class="form-input" placeholder="Tell me about your project..." required
+                        autocomplete="off"></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; justify-content: center">
+                    Send Message <i class="fa-regular fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>RISHABH KUSHWAH</h3>
+                <p style="
+              color: var(--text-muted);
+              max-width: 300px;
+              margin-top: 0.5rem;
+            ">
+                    Building digital products, brands, and experiences.
+                </p>
+            </div>
+
+            <div class="social-links" style="margin-bottom: 0">
+                <a href="https://github.com/rjkush17" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rjkush17/" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/rjkush17/" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © 2023 Rishabh Kushwah. All rights reserved. Handcrafted with
+            <span style="color: red">❤</span>.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
 
 /* Reset & Base Styles */
 *,
@@ -11,45 +11,47 @@
 
 :root {
   /* Pattern: Modern Light Theme */
-  --bg-body: #F8FAFC;
-  --bg-card: #FFFFFF;
+  --bg-body: #f8fafc;
+  --bg-card: #ffffff;
   --bg-glass: rgba(255, 255, 255, 0.8);
 
-  --text-main: #0F172A;
-  --text-muted: #64748B;
-  --text-light: #94A3B8;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
 
-  --primary: #6366F1;
+  --primary: #6366f1;
   --primary-glow: rgba(99, 102, 241, 0.25);
-  --secondary: #A855F7;
+  --secondary: #a855f7;
 
-  --gradient-main: linear-gradient(135deg, #6366F1 0%, #A855F7 100%);
-  --gradient-hover: linear-gradient(135deg, #4F46E5 0%, #9333EA 100%);
+  --gradient-main: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  --gradient-hover: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
 
-  --border-light: #E2E8F0;
+  --border-light: #e2e8f0;
   --radius-lg: 24px;
   --radius-md: 16px;
   --radius-sm: 8px;
 
   --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
-  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+  --shadow-md:
+    0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+  --shadow-lg:
+    0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
   --shadow-glow: 0 0 20px var(--primary-glow);
 
-  --font-main: 'Plus Jakarta Sans', sans-serif;
+  --font-main: "Plus Jakarta Sans", sans-serif;
 }
 
 .dark-mode {
   /* Pattern: Modern Dark Theme */
   --bg-body: #020617;
-  --bg-card: #0F172A;
+  --bg-card: #0f172a;
   --bg-glass: rgba(15, 23, 42, 0.8);
 
-  --text-main: #F1F5F9;
-  --text-muted: #94A3B8;
-  --text-light: #64748B;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-light: #64748b;
 
-  --border-light: #1E293B;
+  --border-light: #1e293b;
 
   --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
@@ -67,7 +69,9 @@ body {
   color: var(--text-main);
   line-height: 1.6;
   overflow-x: hidden;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 /* Typography */
@@ -213,7 +217,7 @@ nav ul li a.active {
 }
 
 nav ul li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -268,32 +272,6 @@ nav ul li a:hover::after {
   overflow: hidden;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: -20%;
-  left: -10%;
-  width: 50%;
-  height: 50%;
-  background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
-  filter: blur(80px);
-  z-index: -1;
-  opacity: 0.6;
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
-  bottom: -10%;
-  right: -10%;
-  width: 50%;
-  height: 50%;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.2) 0%, transparent 70%);
-  filter: blur(80px);
-  z-index: -1;
-  opacity: 0.6;
-}
-
 .hero-tag {
   background: rgba(99, 102, 241, 0.1);
   color: var(--primary);
@@ -328,6 +306,7 @@ nav ul li a:hover::after {
   width: 48px;
   height: 48px;
   display: flex;
+  font-size: 20px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -407,8 +386,8 @@ nav ul li a:hover::after {
 }
 
 .skill-tag img {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25x;
 }
 
 /* Projects Section */
@@ -556,7 +535,6 @@ footer {
 
 /* Responsive */
 @media (max-width: 1024px) {
-
   .about-grid,
   .contact-container {
     grid-template-columns: 1fr;

@@ -5,6 +5,7 @@ const bars = document.querySelector("#bars");
 const cross = document.querySelector("#cross");
 const navLinks = document.querySelectorAll("nav ul li a");
 
+
 function toggleMenu() {
   nav.classList.toggle("active");
   if (nav.classList.contains("active")) {
