@@ -1,32 +1,39 @@
 {
-  "projects": [
-    {
-      "name": "lifeStyleMag - blogapp",
-      "img": "blogApp.png",
-      "description": "A Fullstack Next.js Blog Application",
-      "code": "https://github.com/rjkush17/blogapp-nextjs",
-      "link": "https://lifestylemag.vercel.app/"
-    },
-    {
-      "name": "Stylish - Shoes Store",
-      "img": "shoesApp.png",
-      "description": "A mern appplication of online shoes store",
-      "code": "https://github.com/rjkush17/shoesStore-public",
-      "link": "https://stylishshoesstore.netlify.app/"
-    },
-    {
-      "name": "Quiz Application",
-      "img": "quizApp.jpg",
-      "description": "A Quiz a With lost of feature lost of different quiz categories, and proper result, and scorecard",
-      "code": "https://github.com/rjkush17/advance-quiz-web-app",
-      "link": "https://quiz-rishabh.vercel.app/"
-    },
-    {
-      "name": "Bussiness Website",
-      "img": "revertexApp.png",
-      "description": "A Bussiness WEbsite where you can see bussiness portfolio,services,testimonial and other",
-      "code": "https://github.com/rjkush17/Revertex-landing-page",
-      "link": "https://revertex-rishabh.netlify.app/"
-    }
-  ]
+    "projects": [
+        {
+            "name": "Hirenixs - Online Job Portal ( working in progess )",
+            "img": "hirenixs.png",
+            "description": "A dual profile plateform for searching jobs and recuiters",
+            "code": "https://github.com/rjkush17/hirenixs",
+            "link": "https://hirenixs.vercel.app/"
+        },
+        {
+            "name": "lifeStyleMag - blogapp",
+            "img": "blogApp.png",
+            "description": "A Fullstack Next.js Blog Application",
+            "code": "https://github.com/rjkush17/lifeStyleMag_blogapp",
+            "link": "https://lifestylemag.vercel.app/"
+        },
+        {
+            "name": "Stylish - Shoes Store",
+            "img": "shoesApp.png",
+            "description": "A mern appplication of online shoes store",
+            "code": "https://github.com/rjkush17/shoesStore-public",
+            "link": "https://stylishshoesstore.netlify.app/"
+        },
+        {
+            "name": "Quiz Application",
+            "img": "quizApp.jpg",
+            "description": "A Quiz a With lost of feature lost of different quiz categories, and proper result, and scorecard",
+            "code": "https://github.com/rjkush17/advance-quiz-web-app",
+            "link": "https://quiz-rishabh.vercel.app/"
+        },
+        {
+            "name": "Bussiness Website",
+            "img": "revertexApp.png",
+            "description": "A Bussiness WEbsite where you can see bussiness portfolio,services,testimonial and other",
+            "code": "https://github.com/rjkush17/Revertex-landing-page",
+            "link": "https://revertex-rishabh.netlify.app/"
+        }
+    ]
 }
